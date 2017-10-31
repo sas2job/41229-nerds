@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Александр Смирнов](https://up.htmlacademy.ru/htmlcss/19/user/41229).
-* Наставник: [Алексей Гурьев] (https://htmlacademy.ru/profile/danakishi).
+* Наставник: [Алексей Гурьев](https://htmlacademy.ru/profile/danakishi).
 
 ---
 
