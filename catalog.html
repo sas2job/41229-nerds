@@ -27,8 +27,92 @@
       <div class="title-container container">
         <h1 class="catalog-title">Магазин готовых шаблонов</h1>
       </div>
+
       <div class="flex-box">
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <h2 class="visually-hidden">Фильтр товаров</h2>
+          <fieldset class="filter-type">
+            <legend class="choiсe-title">
+              Стоимость:
+            </legend>
+            <div class="range-field">
+              <div class="range-stroke">
+                <div class="filled-stroke">
+                </div>
+              </div>
+            </div>
+            <div class="filter-cost-box">
+              <label class="filter-cost">От
+                <input type="text" name="cost-from" value="0">
+              </label>
+              <label class="filter-cost">До
+                <input type="text" name="cost-to" value="15000">
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="filter-type">
+            <legend class="choiсe-title">
+              Сетка:
+            </legend>
+            <ul class="grid">
+              <li class="filter-option filter-radio">
+                <label>
+                  <input type="radio" name="grid" value="adaptive" class="visually-hidden" checked>
+                    <span class="filter-radio-img" tabindex="0">Адаптивная</span>
+                </label>
+              </li>
+              <li class="filter-option filter-radio">
+                <label>
+                  <input type="radio" name="grid" value="fixed" class="visually-hidden">
+                    <span class="filter-radio-img" tabindex="0">Фиксированная</span>
+                </label>
+              </li>
+              <li class="filter-option filter-radio">
+                <label>
+                  <input type="radio" name="grid" value="rubber" class="visually-hidden">
+                    <span class="filter-radio-img" tabindex="0">Резиновая</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter-type">
+            <legend class="choise-title">
+              Особенности:
+            </legend>
+            <ul class="features">
+              <li class="filter-option filter-checkbox">
+                <label>
+                  <input type="checkbox" name="slider" class="visually-hidden" checked>
+                    <span class="filter-checkbox-img" tabindex="0">Слайдер</span>
+                </label>
+              </li>
+              <li class="filter-option filter-checkbox">
+                <label>
+                  <input type="checkbox" name="advantages-block" class="visually-hidden">
+                    <span class="filter-checkbox-img" tabindex="0">Блок преимуществ</span>
+                </label>
+              </li>
+              <li class="filter-option filter-checkbox">
+                <label>
+                  <input type="checkbox" name="news" class="visually-hidden" checked>
+                    <span class="filter-checkbox-img" tabindex="0">Новости</span>
+                </label>
+              </li>
+              <li class="filter-option filter-checkbox">
+                <label>
+                  <input type="checkbox" name="gallery" class="visually-hidden">
+                    <span class="filter-checkbox-img" tabindex="0">Галерея</span>
+                </label>
+              </li>
+              <li class="filter-option filter-checkbox">
+                <label>
+                  <input type="checkbox" name="basket" class="visually-hidden">
+                    <span class="filter-checkbox-img" tabindex="0">Корзина</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button filter-button gray-button" type="submit">Показать</button>
         </form>
         <div class="flex-element">
           <div class="sorting">
@@ -129,7 +213,7 @@
     </main>
     <footer class="page-footer">
     
-      <section class="contacts">
+       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts-map">
           <img src="img/map.png" width="1440" height="416" alt="Карта">
@@ -145,13 +229,13 @@
       <section class="social container">
         <ul>
           <li class="social-button vk">
-            <a href="#"><span class="visually-hidden">Вконтакте</span><svg></svg></a>
+            <a href="#"><span class="visually-hidden"> Мы в Контакте</span><svg></svg></a>
           </li>
           <li class="social-button fb">
-           <a href="#"><span class="visually-hidden">Фейсбук</span><svg></svg></a>
+           <a href="#"><span class="visually-hidden">Мы в Фейсбуке</span><svg></svg></a>
           </li>
           <li class="social-button inst">
-            <a href="#"><span class="visually-hidden">Инстаграм</span><svg></svg></a>
+            <a href="#"><span class="visually-hidden">Мы в Инстаграмме</span><svg></svg></a>
           </li>
         </ul>
         <div class="discount">
@@ -161,5 +245,28 @@
       </section>
 
     </footer>
+    
+    <section class="modal-feedback">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <b>Напишите нам</b>
+        <form class="modal-feedback-form" method="post" action="https://echo.htmlacademy.ru">
+            <div>
+                <label for="name">Ваше имя:</label>
+                <input type="text" name="name" id="name" class="modal-feedback-input" placeholder="Представьтесь, пожалуйста">
+            </div>
+            <div>
+                <label for="email">Ваш e-mail:</label>
+                <input type="email" name="email" id="email" class="modal-feedback-input" placeholder="Для отправки ответа">
+            </div>
+            <p>
+                <label for="text">Текст письма:</label>
+                <textarea class="modal-feedback-input modal-feedback-text" name="text" id="text" placeholder="В свободной форме"></textarea>
+            </p>
+            <button class="modal-feedback-button button" type="submit">Отправить</button>
+        </form>
+        <button class="modal-feedback-close"><span class="visually-hidden">Закрыть</span></button>
+    </section>
+
   </body>
-</html>    
+
+</html>

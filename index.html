@@ -26,33 +26,38 @@
     <main class="container">
        <h1 class="visually-hidden">Главная страница дизайн-студии Nerds</h1>
        <section class="slider">
-         <div class="slider-controls">
-         	<label for="btn-1"><span class="visually-hidden">Слайд-1</span></label>
-         	<label for="btn-2"><span class="visually-hidden">Слайд-2</span></label>
-         	<label for="btn-3"><span class="visually-hidden">Слайд-3</span></label>
+         <div class="slider-current container">
+         <input type="radio" id="btn-1" name="toggle" checked>
+         <input type="radio" id="btn-2" name="toggle">
+         <input type="radio" id="btn-3" name="toggle">          
+           <div class="slider-controls">
+         	  <label for="btn-1"><span class="visually-hidden">Слайд-1</span></label>
+         	  <label for="btn-2"><span class="visually-hidden">Слайд-2</span></label>
+              <label for="btn-3"><span class="visually-hidden">Слайд-3</span></label>
          </div>
          <div class="slider-picture slide-1"><img src="img/slide1.png" width="698" height="413" alt="слайд-1"></div>
          <div class="slider-picture slide-2"><img src="img/slide2.png" width="663" height="430" alt="слайд-2"></div>
          <div class="slider-picture slide-3"><img src="img/slide3.png" width="749" height="411" alt="слайд-3"></div>
          <div class="slider-container">
-           <div class="slider-content">
+           <div class="slider-inner">
             <b class="slider-b">Долго, дорого,<br> скрупулёзно.</b>
             <p class="slider-p">Математически выверенный дизайн<br> 
             для вашего сайта или мобильного приложения.</p>
             <a class="slider-button button" href="#">Узнать больше</a>
            </div>
-           <div class="slider-content">
+           <div class="slider-inner">
               <b class="slider-b">Любим математику<br> как никто другой</b>
               <p class="slider-p">Никакого креатива, только математические формулы<br> 
               для расчета идеальных пропорций.</p>
               <a class="slider-button button" href="#">Узнать больше</a>
             </div>
-            <div class="slider-content">
+            <div class="slider-inner">
               <b class="slider-b">Только ночь,<br> только хардкор</b>
               <p class="slider-p">Работать днём, как все? Мы против этого.<br> 
               Ближе к полуночи работа только начинается.</p>
               <a class="slider-button button" href="#">Узнать больше</a>
             </div>
+          </div>  
          </div>
        </section>
 
@@ -163,13 +168,13 @@
       <section class="social container">
         <ul>
           <li class="social-button vk">
-            <a href="#"><span class="visually-hidden">Вконтакте</span><svg></svg></a>
+            <a href="#"><span class="visually-hidden"> Мы в Контакте</span><svg></svg></a>
           </li>
           <li class="social-button fb">
-           <a href="#"><span class="visually-hidden">Фейсбук</span><svg></svg></a>
+           <a href="#"><span class="visually-hidden">Мы в Фейсбуке</span><svg></svg></a>
           </li>
           <li class="social-button inst">
-            <a href="#"><span class="visually-hidden">Инстаграм</span><svg></svg></a>
+            <a href="#"><span class="visually-hidden">Мы в Инстаграмме</span><svg></svg></a>
           </li>
         </ul>
         <div class="discount">
@@ -180,5 +185,27 @@
 
     </footer>
     
+    <section class="modal-feedback">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <b>Напишите нам</b>
+        <form class="modal-feedback-form" method="post" action="https://echo.htmlacademy.ru">
+            <div>
+                <label for="name">Ваше имя:</label>
+                <input type="text" name="name" id="name" class="modal-feedback-input" placeholder="Представьтесь, пожалуйста">
+            </div>
+            <div>
+                <label for="email">Ваш e-mail:</label>
+                <input type="email" name="email" id="email" class="modal-feedback-input" placeholder="Для отправки ответа">
+            </div>
+            <p>
+                <label for="text">Текст письма:</label>
+                <textarea class="modal-feedback-input modal-feedback-text" name="text" id="text" placeholder="В свободной форме"></textarea>
+            </p>
+            <button class="modal-feedback-button button" type="submit">Отправить</button>
+        </form>
+        <button class="modal-feedback-close"><span class="visually-hidden">Закрыть</span></button>
+    </section>
+
   </body>
+
 </html>
