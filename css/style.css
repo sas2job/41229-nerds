@@ -1,0 +1,27 @@
+/* Первое из дух вспомогательных css-правил.
+   Будет удалено из итогового проекта. */
+*, ::before, ::after {
+  outline: 1px dashed grey;
+}
+
+body {
+	font-family: 'Roboto', 'Arial', sans-serif;
+	font-size: 16px; /*Основной размер шрифта*/
+  line-height: 24px; /*Основной интерлиньяж*/
+  color: #283136;    /*Основной цвет текста*/
+  font-weight: 400; /*Основная жирность шрифта*/
+	margin: 0;
+  padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Второе из дух вспомогательных css-правил.
+   Будет удалено из итогового проекта. */
+   *, ::before, ::after {
+     outline: none;
+   }
