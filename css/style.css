@@ -4,22 +4,545 @@
   outline: 1px dashed grey;
 }
 
+
+
+
+
+/*------------------------------------*\
+    #COMMON-TAGS
+\*------------------------------------*/
+
 body {
-	font-family: 'Roboto', 'Arial', sans-serif;
-	font-size: 16px; /*Основной размер шрифта*/
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 16px; /*Основной размер шрифта*/
   line-height: 24px; /*Основной интерлиньяж*/
   color: #283136;    /*Основной цвет текста*/
   font-weight: 400; /*Основная жирность шрифта*/
-	margin: 0;
+  background-color: #ffffff; /*Белый цвет фона*/
+  margin: 0;
   padding: 0;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  }
+/*------------------------------------*\
+    #COMMON-CLASSES
+\*------------------------------------*/
+.visually-hidden {
+  position: absolute;
+   width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  }
+/*------------------------------------*\
+    #HEADER
+\*------------------------------------*/
+
+/*------------------------------------*\
+    Насыщенность шрифта
+    Regular - 400
+    Medium - 500
+    Bold - 700
+\*------------------------------------*/
+.page-header {
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 30px;
+  background-color: #eeeeee;
+}
+/*  #NAVIGATION-SITE  ----------------*/
+a {
+  text-decoration: none;
+  color: #000000;
 }
 
+header ul {
+  list-style: none;
+}
+.site-navigation a:hover:not(.site-navigation-active),
+.site-navigation a:focus:not(.site-navigation-active) {
+  color: #fb565a;
+}
+.site-navigation a:active:not(.site-navigation-active) {
+    color: rgba(0, 0, 0, 0.3);
+    border-bottom: 2px solid #fb565a;
+}
+.site-navigation-active {
+    border-bottom: 2px solid #fb565a;
+}
 
+/*------------------------------------*\
+    #INDEX-CONTENT
+\*------------------------------------*/
+
+/*  #SLIDER---------------------------*/
+.slider {
+  background-color: #eeeeee;
+  margin-bottom: 80px;
+  }
+  .slider-container {
+  width: 3608px;
+  padding: 0;
+}
+.slider-current {
+
+}
+  .slider-b {
+  font-size: 55px;
+  line-height: 55px;
+  color: #000000;
+  font-weight: 500;
+  display: block;
+  margin-top: 78px;
+}
+.slider-p {
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+.slider-controls {
+  list-style: none;
+}
+.slider-inner {
+  display: inline-block;
+  width: 1200px;
+  padding: 0px;
+  margin: 0px;
+  vertical-align: middle;
+}
+.slider-picture {
+
+}
+.slide-1 {
+
+}
+.slide-2 {
+
+}
+.slide-3 {
+
+}
+.slider-button {
+    padding: 16px 54px;
+  }
+/*  #BUTTONS---------------------------*/
+.button {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: #fb565a;
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  vertical-align: middle;
+}
+.button:hover,
+.button:focus {
+  background-color: #e74246;
+}
+.button:active {
+  background-color: #d7373b;
+  box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
+  color: rgba(255, 255, 255, 0.3)
+}
+/*  #ADVANTAGES-----------------------*/
+.advantage-picture {
+  margin-bottom: 18px;
+}
+.advantage-title {
+  margin: 0;
+  margin-bottom: 16px;
+  width: 300px;
+}
+.advantage-text {
+  margin: 0;
+  margin-bottom: 32px;
+  width: 250px;
+}
+.advantage-button {
+  padding: 16px 40px;
+  margin-bottom: 80px;
+}
+.green-button {
+  background-color: #00ca74;
+}
+.green-button:hover,
+.green-button:focus {
+  background-color: #00bc6c;
+}
+.green-button:active {
+  background-color: #00aa62;
+}
+.yellow-button {
+  background-color: #efc84a;
+}
+.yellow-button:hover,
+.yellow-button:focus {
+  background-color: #eab534;
+}
+.yellow-button:active {
+  background-color: #e5a722;
+}
+
+/*  #STUDIO-----------------------*/
+.studio-about-us {
+    width: 660px;
+    margin-bottom: 72px;
+}
+.sudio-title-b {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #000000;
+  display: block;
+  margin-bottom: 34px;
+}
+.sudio-text {
+  margin-bottom: 38px;
+}
+.advantages-list {
+    list-style: none;
+}
+.advantages-percent-list {
+    list-style: none;
+}
+.sudio-list-b {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000000;
+  display: inline-block;
+  vertical-align: middle;
+}
+.sudio-about-us .sudio-list-b {
+  margin-bottom: 25px;
+}
+.sudio-list {
+  padding: 0;
+  margin: 0;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sudio-list li {
+  position: relative;
+  padding-left: 36px;
+}
+
+.sudio-percent-picture {
+  line-height: 0;
+  margin-bottom: 37px;
+}
+.sudio-percent .sudio-list-b {
+  margin-left: 16px;
+  margin-bottom: 34px;
+}
+.sudio-list-persent b {
+    font-size: 45px;
+    line-height: 10.06px;
+    font-weight: 700;
+    color: #000;
+    display: block;
+    margin-bottom: 38px;
+}
+.sudio-list-persent span {
+    vertical-align: 14px;
+    font-size: 27px;
+}
+.sudio-list-persent p {
+    line-height: 18px;
+}
+
+/*  #PARTNERS --------------------------*/
+.partners-list {
+  list-style: none;
+}
+.partners-list a {
+  opacity: 0.2;
+}
+.partners-list a:hover,
+.partners-list a:focus {
+  opacity: 1;
+}
+.partners-list a:active {
+  opacity: 0.1;
+}
+/*  #CONTACTS------------------------*/
+.contacts-text b {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+  display: block;
+  margin-bottom: 24px;
+}
+.contacts-text p {
+  line-height: 18px;
+  color: #666666;
+}
+/*------------------------------------*\
+    #INNER-CONTENT
+\*------------------------------------*/
+/*  #HEADER - INNER-------------------*/
+.background-title {
+  background-color: #eeeeee;
+}
+/*  #FILTERS --------------------------*/
+  .choice-title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.filter ul {
+    list-style: none;
+}
+.filter .range-field {
+  background-color: #eee;
+  border-radius: 4px;
+  padding: 39px 20px;
+  margin-top: 33px;
+  margin-bottom: 14px;
+}
+.filter .range-stroke {
+  height: 2px;
+  width: 220px;
+  background-color: #d7dcde;
+  position: relative;
+}
+.filter .filled-stroke {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 152px;
+  background-color: #00ca74;
+}
+.filter-cost {
+  line-height: 22px;
+  text-transform: uppercase;
+}
+.filter-input {
+  line-height: 20px;
+}
+.filter-option:hover,
+.filter-option:focus {
+  color: #000000;
+}
+.filter-type {
+  border: none;
+  padding: 0;
+}
+.filter-type .choise-title {
+  display: block;
+  margin-bottom: 15px;
+}
+.filter-type input {
+  width: 80px;
+  height: 38px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 22px;
+  margin-left: 12px;
+  border-radius: 4px;
+  background-color: #eeeeee;
+  border: none;
+  padding: 0;
+  text-align: center;
+}
+/*  #TEMPLATES ------------------------*/
+.templates-list {
+  list-style: none;
+}
+.templates-hover {
+  background-color: #eee;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  width: 360px;
+  max-height: 576px;
+  min-height: 231px;
+  padding-bottom: 43px;
+  padding-top: 9px;
+  overflow: auto;
+  display: none;
+}
+.templates-inner {
+  line-height: 0;
+  overflow: hidden;
+}
+.templates-item {
+  border-top: 40px solid #e9e9e9;
+  border-radius: 4px;
+  position: relative;
+  margin-bottom: 33px;
+}
+.templates-item:hover,
+.templates-item:focus {
+  border-top: 40px solid #4d4d4d;
+}
+.templates-item:hover .templates-hover,
+.templates-item:focus .templates-hover {
+  min-height: 231px;
+  display: block;
+}
+.templates-hover-title {
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+.templates-hover-text {
+  line-height: 18px;
+  color: #666;
+  margin-bottom: 29px;
+}
+.br {
+  display: block;
+}
+
+/*  #PAGINATION -----------------------*/
+.page-buttons-previous,
+.page-buttons-next {
+  padding: 16px 78px;
+}
+.page-buttons-previous {
+  display: none;
+}
+.page-buttons-number {
+  padding: 16px 20px;
+}
+.page-buttons {
+  list-style: none;
+}
+.page-buttons-number-current,
+.page-buttons-number-current:hover,
+.page-buttons-number-current:focus,
+.page-buttons-number-current:active {
+  background-color: #fff;
+  box-shadow: inset 0 0 0 3px #dbdbdb;
+  color: #000;
+}
+.page-buttons {
+  display: flex;
+  width: 740px;
+  height: 50px;
+  padding: 0;
+  margin-bottom: 60px;
+}
+.page-buttons-previous,
+.page-buttons-number,
+.page-buttons-next {
+  margin-right: 12px;
+}
+/*------------------------------------*\
+    #FOOTER
+\*------------------------------------*/
+.social-button a {
+  position: relative;
+  display: block;
+  line-height: 0;
+  width: 78px;
+  height: 78px;
+  background-color: #e1e1e1;
+  border-radius: 50%;
+}
+.social-button a:hover,
+.social-button a:focus {
+  background-color: #e74246;
+}
+.social-button a:active {
+  background-color: #d7373b;
+  box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
+}
+.social-button svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.social-button a:active svg {
+    opacity: 0.3;
+}
+.discount {
+    margin-left: 140px;
+}
+.discount b {
+    display: block;
+    margin: 0;
+    margin-top: 6px;
+    margin-bottom: 10px;
+}
+.discount p {
+    margin: 0;
+  }
+
+/*------------------------------------*\
+    #MODAL-FEEDBACK
+\*------------------------------------*/
+.modal-feedback b {
+    font-size: 45px;
+    line-height: 45px;
+    color: #000;
+    font-weight: 500;
+}
+.modal-feedback-form {
+    line-height: 18px;
+    font-weight: 700;
+    color: #000;
+    margin-top: 41px;
+}
+.modal-feedback-input {
+    font-family: "Roboto", "Arial", sans-serif;
+    line-height: 18px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(68, 68, 68);
+    width: 360px;
+    border: 2px solid #d7dcde;
+    border-radius: 4px;
+    padding: 14px 0 14px 14px;
+    margin-top: 9px;
+    margin-bottom: 18px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    outline: 0;
+}
+.modal-feedback-text {
+    overflow: auto;
+    resize: none;
+    width: 760px;
+    height: 118px;
+}
+.modal-feedback-input:hover {
+    border-color: #b4b9bb;
+}
+.modal-feedback-input:focus {
+    border-color: #000;
+}
+.feedback-input-not-valid {
+    border-color: #e74246;
+    color: #e74246;
+}
 /* Второе из дух вспомогательных css-правил.
    Будет удалено из итогового проекта. */
    *, ::before, ::after {
