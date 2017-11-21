@@ -3,15 +3,27 @@
 *, ::before, ::after {
   outline: 1px dashed grey;
 }
-
-
-
-
-
+/*------------------------------------*\
+    Насыщенность шрифта
+    Regular - 400
+    Medium - 500
+    Bold - 700
+\*------------------------------------*/
 /*------------------------------------*\
     #COMMON-TAGS
 \*------------------------------------*/
 
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+html {
+box-sizing: border-box;
+}
+
+html,
 body {
   font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 16px; /*Основной размер шрифта*/
@@ -27,32 +39,27 @@ img {
   max-width: 100%;
   height: auto;
 }
-.container {
-  width: 1440px;
-  margin: 0 auto;
-  }
+
 /*------------------------------------*\
     #COMMON-CLASSES
 \*------------------------------------*/
 .visually-hidden {
   position: absolute;
-   width: 1px;
+  width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
   overflow: hidden;
   }
+  .container {
+  width: 1200px;
+  margin: 0 auto;
+  }
 /*------------------------------------*\
     #HEADER
 \*------------------------------------*/
 
-/*------------------------------------*\
-    Насыщенность шрифта
-    Regular - 400
-    Medium - 500
-    Bold - 700
-\*------------------------------------*/
 .page-header {
   text-transform: uppercase;
   font-weight: 500;
@@ -60,6 +67,21 @@ img {
   background-color: #eeeeee;
 }
 /*  #NAVIGATION-SITE  ----------------*/
+
+.page-navigation {
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  /*Отступы по краям для того,
+  чтобы текст на маленкльком разрешении
+  не прилипал к краям страниц*/
+ }
+
+.page-main-logo {
+  margin-top: 50px;
+  line-height: 0;
+}
+
 a {
   text-decoration: none;
   color: #000000;
@@ -67,6 +89,24 @@ a {
 
 header ul {
   list-style: none;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 75px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.site-navigation ul {
+
+}
+
+.site-navigation li {
+
 }
 .site-navigation a:hover:not(.site-navigation-active),
 .site-navigation a:focus:not(.site-navigation-active) {
@@ -79,7 +119,34 @@ header ul {
 .site-navigation-active {
     border-bottom: 2px solid #fb565a;
 }
-
+.site-navigation:first-of-type {
+    justify-content: space-between;
+    width: 440px;
+    margin-left: 200px;
+  }
+.site-navigation:last-of-type {
+  /* Корзина */
+    position: relative;
+    justify-content: flex-end;
+    padding-left: 25px;
+    margin-left: auto;
+}
+.site-navigation:last-of-type li::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background-image: url("../img/cart-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0.3;
+}
+.site-navigation:last-of-type a {
+    width: 115px;
+    text-align: right;
+}
 /*------------------------------------*\
     #INDEX-CONTENT
 \*------------------------------------*/
@@ -94,7 +161,10 @@ header ul {
   padding: 0;
 }
 .slider-current {
-
+  position: relative;
+  overflow: hidden;
+  padding-left: 20px;
+  height: 430px; /*430px - высота самого большого слайдера*/
 }
   .slider-b {
   font-size: 55px;
@@ -157,17 +227,40 @@ header ul {
   color: rgba(255, 255, 255, 0.3)
 }
 /*  #ADVANTAGES-----------------------*/
+.advantages {
+
+}
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;  /*Отступы от края страницы*/
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  border-bottom: 2px solid red;
+}
+/*.advantages-list ul {
+  margin: 0;
+  padding: 0;
+}*/
+.advantages-list li {
+  margin-right: 60px;
+}
+
 .advantage-picture {
-  margin-bottom: 18px;
+  margin-bottom: 22px;
 }
 .advantage-title {
+  font-size: 24px;
+  font-weight: 700;
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 19px;
   width: 300px;
+  text-transform: uppercase;
 }
 .advantage-text {
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 33px;
   width: 250px;
 }
 .advantage-button {
@@ -545,6 +638,6 @@ header ul {
 }
 /* Второе из дух вспомогательных css-правил.
    Будет удалено из итогового проекта. */
-   *, ::before, ::after {
+  *, ::before, ::after {
      outline: none;
    }
