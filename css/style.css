@@ -228,7 +228,7 @@ header ul {
 }
 /*  #ADVANTAGES-----------------------*/
 .advantages {
-
+  margin-bottom: 70px;
 }
 .advantages-list {
   display: flex;
@@ -239,14 +239,13 @@ header ul {
   flex-wrap: wrap;
   border-bottom: 2px solid red;
 }
-/*.advantages-list ul {
-  margin: 0;
-  padding: 0;
-}*/
-.advantages-list li {
-  margin-right: 60px;
-}
 
+.advantage-item {
+  margin-right: 100px;
+}
+.advantage-item:last-child {
+    margin-right: 0;
+}
 .advantage-picture {
   margin-bottom: 22px;
 }
