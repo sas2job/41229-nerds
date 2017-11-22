@@ -87,9 +87,11 @@ a {
   color: #000000;
 }
 
+/*
 header ul {
   list-style: none;
 }
+*/
 
 .site-navigation {
   display: flex;
@@ -99,15 +101,19 @@ header ul {
   margin-right: 0;
   margin-bottom: 0;
   padding: 0;
+  list-style: none;
 }
 
+/*
 .site-navigation ul {
 
 }
-
-.site-navigation li {
+*/
+/*.site-navigation li {
 
 }
+*/
+
 .site-navigation a:hover:not(.site-navigation-active),
 .site-navigation a:focus:not(.site-navigation-active) {
   color: #fb565a;
@@ -228,7 +234,7 @@ header ul {
 }
 /*  #ADVANTAGES-----------------------*/
 .advantages {
-  margin-bottom: 70px;
+  margin-bottom: 40px;
 }
 .advantages-list {
   display: flex;
@@ -237,14 +243,12 @@ header ul {
   padding-right: 20px;  /*Отступы от края страницы*/
   margin-bottom: 40px;
   flex-wrap: wrap;
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid #eeeeee;
+  list-style: none;
 }
 
 .advantage-item {
-  margin-right: 100px;
-}
-.advantage-item:last-child {
-    margin-right: 0;
+  margin-right: 60px;
 }
 .advantage-picture {
   margin-bottom: 22px;
@@ -288,10 +292,15 @@ header ul {
 }
 
 /*  #STUDIO-----------------------*/
-.studio-about-us {
-    width: 660px;
-    margin-bottom: 72px;
+.studio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-bottom: 2px solid #eeeeee;
 }
+
 .sudio-title-b {
   font-size: 45px;
   line-height: 45px;
@@ -300,77 +309,133 @@ header ul {
   display: block;
   margin-bottom: 34px;
 }
-.sudio-text {
+
+.studio-about-us {
+  width: 660px;
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+.studio-text {
   margin-bottom: 38px;
 }
-.advantages-list {
-    list-style: none;
-}
-.advantages-percent-list {
-    list-style: none;
-}
-.sudio-list-b {
+.studio-list-b {
   text-transform: uppercase;
   font-weight: 700;
   color: #000000;
-  display: inline-block;
+/*  display: inline-block;*/
   vertical-align: middle;
 }
-.sudio-about-us .sudio-list-b {
-  margin-bottom: 25px;
-}
-.sudio-list {
+.studio-list {
+  list-style: none;
   padding: 0;
   margin: 0;
-  min-height: 120px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-.sudio-list li {
-  position: relative;
-  padding-left: 36px;
+  min-height: 120px;
 }
 
-.sudio-percent-picture {
+.studio-list li {
+  position: relative;
+  padding-left: 36px;
+  margin-top: 25px;
+}
+
+.studio-list li::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  top: 11px;
+  left: 0;
+  background-color: #fb565a;
+}
+
+.studio-percent {
+
+}
+.studio-percent-picture {
   line-height: 0;
   margin-bottom: 37px;
 }
-.sudio-percent .sudio-list-b {
+.studio-percent-list-b {
+  display: block;
   margin-left: 16px;
-  margin-bottom: 34px;
+  margin-bottom: 48px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
-.sudio-list-persent b {
-    font-size: 45px;
-    line-height: 10.06px;
-    font-weight: 700;
-    color: #000;
-    display: block;
-    margin-bottom: 38px;
+.studio-list-percent {
+  display: flex;
+  width: 350px;
+  padding: 0;
+  list-style: none;
 }
-.sudio-list-persent span {
-    vertical-align: 14px;
-    font-size: 27px;
+.studio-list-percent li {
+  margin-right: 21px;
 }
-.sudio-list-persent p {
-    line-height: 18px;
+.studio-list-percent b {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 10.06px;
+  margin-bottom: 38px;
+}
+.studio-list-percent p {
+  line-height: 18px;
+}
+
+.studio-list-percent span {
+  vertical-align: 14px;
+  font-size: 27px;
 }
 
 /*  #PARTNERS --------------------------*/
 .partners-list {
+  display: flex;
+  justify-content: space-around;
   list-style: none;
+  margin-bottom: 80px;
+  padding-top: 49px;
+  padding-right: 0;
+  padding-bottom: 37px;
+  padding-left: 0;
+  border-bottom: 2px solid #eeeeee;
 }
 .partners-list a {
-  opacity: 0.2;
+  opacity: 0.2; /*Непрозрачность 20%*/
 }
 .partners-list a:hover,
 .partners-list a:focus {
-  opacity: 1;
+  opacity: 1; /*Непрозрачность 100%*/
 }
 .partners-list a:active {
-  opacity: 0.1;
+  opacity: 0.1; /*Непрозрачность 10%*/
+}
+
+.partners-list li::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 52px;
+  top: 64px;
+  left: 0;
+  background-color: #eeeeee;
 }
 /*  #CONTACTS------------------------*/
+.contacts-map {
+  position: relative;
+}
+.contacts-container-text {
+  position: absolute;
+  width: 319px;
+  height: 308px;
+  top: 53px;
+  padding-top: 49px;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 50px;
+  background-color: #ffffff;
+}
 .contacts-text b {
   font-size: 18px;
   line-height: 30px;
@@ -384,6 +449,7 @@ header ul {
   line-height: 18px;
   color: #666666;
 }
+
 /*------------------------------------*\
     #INNER-CONTENT
 \*------------------------------------*/
@@ -637,6 +703,6 @@ header ul {
 }
 /* Второе из дух вспомогательных css-правил.
    Будет удалено из итогового проекта. */
-  *, ::before, ::after {
+/*  *, ::before, ::after {
      outline: none;
    }
