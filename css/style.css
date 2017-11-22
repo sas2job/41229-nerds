@@ -429,7 +429,8 @@ header ul {
   position: absolute;
   width: 319px;
   height: 308px;
-  top: 53px;
+  top: 52px;
+  left: 132px;
   padding-top: 49px;
   padding-right: 0;
   padding-bottom: 0;
@@ -448,8 +449,12 @@ header ul {
 .contacts-text p {
   line-height: 18px;
   color: #666666;
+  width: 210px;
 }
-
+.contacts-button {
+  padding: 16px 45px;
+  margin-top: 22px;
+}
 /*------------------------------------*\
     #INNER-CONTENT
 \*------------------------------------*/
@@ -615,6 +620,18 @@ header ul {
 /*------------------------------------*\
     #FOOTER
 \*------------------------------------*/
+/*  #SOCIAL --------------------------*/
+.social {
+  display: flex;
+  padding-left: 20px;
+  margin-bottom: 70px;
+}
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+
+}
 .social-button a {
   position: relative;
   display: block;
@@ -639,70 +656,80 @@ header ul {
   transform: translateX(-50%) translateY(-50%);
 }
 .social-button a:active svg {
-    opacity: 0.3;
+  opacity: 0.3;
 }
 .discount {
-    margin-left: 140px;
+  margin-left: 140px;
 }
 .discount b {
-    display: block;
-    margin: 0;
-    margin-top: 6px;
-    margin-bottom: 10px;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+  font-weight: 700;
+  display: block;
+  margin: 0;
+  margin-top: 6px;
+  margin-bottom: 10px;
 }
 .discount p {
-    margin: 0;
+  margin: 0;
+  line-height: 22px;
+  color: #444444;
   }
 
 /*------------------------------------*\
     #MODAL-FEEDBACK
 \*------------------------------------*/
 .modal-feedback b {
-    font-size: 45px;
-    line-height: 45px;
-    color: #000;
-    font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+  color: #000000;
+  font-weight: 500;
 }
 .modal-feedback-form {
-    line-height: 18px;
-    font-weight: 700;
-    color: #000;
-    margin-top: 41px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #000000;
+  margin-top: 41px;
 }
 .modal-feedback-input {
-    font-family: "Roboto", "Arial", sans-serif;
-    line-height: 18px;
-    font-size: 16px;
-    font-weight: 400;
-    color: rgb(68, 68, 68);
-    width: 360px;
-    border: 2px solid #d7dcde;
-    border-radius: 4px;
-    padding: 14px 0 14px 14px;
-    margin-top: 9px;
-    margin-bottom: 18px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    outline: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  line-height: 18px;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(68, 68, 68);
+  width: 360px;
+  border: 2px solid #d7dcde;
+  border-radius: 4px;
+  padding: 14px 0 14px 14px;
+  margin-top: 9px;
+  margin-bottom: 18px;
+  outline: 0;
 }
 .modal-feedback-text {
-    overflow: auto;
-    resize: none;
-    width: 760px;
-    height: 118px;
+  overflow: auto;
+  resize: none;
+  width: 760px;
+  height: 118px;
 }
 .modal-feedback-input:hover {
-    border-color: #b4b9bb;
+  border-color: #b4b9bb;
 }
 .modal-feedback-input:focus {
-    border-color: #000;
+  border-color: #000000;
 }
 .feedback-input-not-valid {
-    border-color: #e74246;
-    color: #e74246;
+  border-color: #e74246;
+  color: #e74246;
 }
+
+.modal-feedback-button {
+  padding: 16px 45px;
+  margin-top: 22px;
+}
+
 /* Второе из дух вспомогательных css-правил.
    Будет удалено из итогового проекта. */
-/*  *, ::before, ::after {
+  *, ::before, ::after {
      outline: none;
    }
