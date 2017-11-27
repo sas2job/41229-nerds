@@ -147,6 +147,12 @@ a {
   background-color: #eeeeee;
   margin-bottom: 80px;
   }
+.slider-current {
+  position: relative;
+  overflow: hidden;
+  padding-left: 20px;
+  height: 431px;
+}
   .slider-container {
   width: 3608px;
   padding: 0;
@@ -450,23 +456,16 @@ a {
 /*  #TITLE-INNER-------------------*/
 
 .title-container {
+  padding: 77px 0 105px;
+  color: #000000;
   background-color: #eeeeee;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding-top: 78px;
-  padding-right: 20px;
-  padding-bottom: 108px;
-  padding-left: 20px;
   margin-bottom: 45px;
 }
 .catalog-title {
+  font-weight: 500;
   font-size: 55px;
   line-height: 55px;
-  font-weight: 500;
-  color: #000000;
-  display: block;
-  margin: 0;
+  text-align: center;
 }
 
 /*  #FILTERS --------------------------*/
@@ -912,6 +911,6 @@ a {
 
 /* Второе из дух вспомогательных css-правил.
    Будет удалено из итогового проекта. */
-/*  *, ::before, ::after {
+  *, ::before, ::after {
      outline: none;
    }
