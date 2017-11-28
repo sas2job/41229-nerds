@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -10,9 +11,9 @@
 
   <body>
     <header class="page-header">
-    	<nav class="page-navigation container">
-    	  <a class="page-main-logo">
-    	  	<img src="img/nerds-logo.png" width="160" height="65" alt="Дизайн-студия Nerds">
+      <nav class="page-navigation container">
+        <a class="page-main-logo">
+          <img src="img/nerds-logo.png" width="160" height="65" alt="Дизайн-студия Nerds">
           </a>
           <ul class="site-navigation">
             <li><a href="#">Студия</a></li>
@@ -23,18 +24,20 @@
           <ul class="site-navigation">
             <li><a href="#">Корзина</a></li>
           </ul>
-    	</nav>
+      </nav>
     </header>
 
     <main>
         <div class="title-container">
           <h1 class="catalog-title container">Магазин готовых шаблонов</h1>
         </div>
-
-      <div class="flex-box container">
-        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+        <div class="flex-box container">
+        <!-- Блок страницы  начало -->
+          <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <!-- фильтры  начало -->
           <h2 class="visually-hidden">Фильтр товаров</h2>
           <fieldset class="filter-type">
+            <!-- фильтр стоимость  начало -->
             <legend class="choiсe-title">
               Стоимость:
             </legend>
@@ -52,8 +55,10 @@
                 <input type="text" name="cost-to" value="15000">
               </label>
             </div>
+            <!-- фильтр стоимость  конец -->
           </fieldset>
           <fieldset class="filter-type">
+            <!-- фильтр тип сетки  начало -->
             <legend class="choiсe-title">
               Сетка:
             </legend>
@@ -77,8 +82,10 @@
                 </label>
               </li>
             </ul>
+              <!-- фильтр тип сетки конец -->
           </fieldset>
           <fieldset class="filter-type">
+            <!-- фильтр особенности начало -->
             <legend class="choiсe-title">
               Особенности:
             </legend>
@@ -114,11 +121,13 @@
                 </label>
               </li>
             </ul>
+             <!-- фильтр особенности конец -->
           </fieldset>
           <button class="button filter-button gray-button" type="submit">Показать</button>
-        </form>
-
-        <div class="flex-element">
+         <!-- фильтры  конец -->
+          </form>
+          <div class="flex-element">
+          <!-- Блок с шаблонами начало -->
           <div class="sorting">
               <h2 class="visually-hidden">Сортировка товаров</h2>
                <span class="choiсe-title">Сортировать:</span>
@@ -133,8 +142,8 @@
                       <li><a class="sorting-up" href="#"><span class="visually-hidden">Снизу вверх</span></a></li>
                     </ul>
                   </div>
-
-                  <section class="templates">
+          </div>
+                            <div class="templates">
                     <h2 class="visually-hidden">Готовые шаблоны</h2>
                     <ul class="templates-list">
                       <li class="templates-item">
@@ -144,7 +153,7 @@
                         </div>
                         <div class="templates-hover">
                           <h3 class="templates-hover-title"><a href="#">Sedona</a></h3>
-                          <p class="templates-hover-text">Информационный сайт <br>для туристов</span></p>
+                          <p class="templates-hover-text">Информационный сайт <span class="br">для туристов</span></p>
                           <a class="templates-hover-btn" href="#">9 900 руб.</a>
                         </div>
                       </li>
@@ -155,7 +164,7 @@
                         </div>
                         <div class="templates-hover">
                           <h3 class="templates-hover-title"><a href="#">Pink app</a></h3>
-                          <p class="templates-hover-text">Продуктовый лендинг <br>приложения для iOS и Android</span></p>
+                          <p class="templates-hover-text">Продуктовый лендинг <span class="br">приложения для iOS и Android</span></p>
                           <a class="templates-hover-btn" href="#">9 900 руб.</a>
                         </div>
                       </li>
@@ -166,7 +175,7 @@
                         </div>
                         <div class="templates-hover">
                           <h3 class="templates-hover-title"><a href="#">Barbershop</a></h3>
-                          <p class="templates-hover-text">Сайт салона красоты. <br>Для мужчин, да.</span></p>
+                          <p class="templates-hover-text">Сайт салона красоты. <span class="br">Для мужчин, да.</span></p>
                           <a class="templates-hover-btn" href="#">9 900 руб.</a>
                         </div>
                       </li>
@@ -177,7 +186,7 @@
                         </div>
                         <div class="templates-hover">
                           <h3 class="templates-hover-title"><a href="#">Mishka</a></h3>
-                          <p class="templates-hover-text">Интернет-магазин <br>вязаных игрушек</span></p>
+                          <p class="templates-hover-text">Интернет-магазин <span class="br">вязаных игрушек</span></p>
                           <a class="templates-hover-btn" href="#">9 900 руб.</a>
                         </div>
                       </li>
@@ -188,7 +197,7 @@
                         </div>
                         <div class="templates-hover">
                           <h3 class="templates-hover-title"><a href="#">A plus</a></h3>
-                          <p class="templates-hover-text">Лендинг курсов повышения <br>квалификации</span></p>
+                          <p class="templates-hover-text">Лендинг курсов повышения <span class="br">квалификации</span></p>
                           <a class="templates-hover-btn" href="#">9 900 руб.</a>
                         </div>
                       </li>
@@ -199,12 +208,12 @@
                         </div>
                         <div class="templates-hover">
                           <h3 class="templates-hover-title"><a href="#">Кваст</a></h3>
-                          <p class="templates-hover-text">Промо-сайт производителя <br>крафтового кваса</span></p>
+                          <p class="templates-hover-text">Промо-сайт производителя <span class="br">крафтового кваса</span></p>
                           <a class="templates-hover-btn" href="#">9 900 руб.</a>
                         </div>
                       </li>
                     </ul>
-                  </section>
+                  </div>
                   <ul class="page-buttons">
                     <li><a class="page-buttons-previous" href="#">Предыдущая</a></li>
                     <li><a class="page-buttons-number page-buttons-number-current">1</a></li>
@@ -212,8 +221,10 @@
                     <li><a class="page-buttons-number" href="#">3</a></li>
                     <li><a class="page-buttons-next" href="#">Следующая</a></li>
                   </ul>
+                </div>
             </div>
-      </div>
+        </div>
+
     </main>
    <footer class="page-footer">
 
