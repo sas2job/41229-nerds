@@ -481,10 +481,10 @@ a {
   align-items: left;
   width: 260px;
 }
-
-/*
-.filter-type input[type="text"] {
-  */
+.filter-type { /*Убирает границу у формы*/
+  border: none;
+  padding: 0;
+}
 .value-cost {
   width: 80px;
   height: 38px;
@@ -532,14 +532,11 @@ a {
   position: absolute;
   top: 50%;
   margin-top: -10px;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
   z-index: 1;
   left: -5px;
-  background-color: #ababab;
-  border: 8px solid #fff;
-  box-shadow: 0 2px 0 0 #cccdcd;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/filter-button.svg);
 }
 .filled-stroke {
   position: absolute;
@@ -555,12 +552,9 @@ a {
   position: absolute;
   top: 50%;
   margin-top: -10px;
-  border-radius: 50%;
   width: 20px;
   height: 20px;
-  background-color: #ababab;
-  border: 8px solid #ffffff;
-  box-shadow: 0 2px 0 0 #cccdcd;
+  background-image: url(../img/filter-button.svg);
 }
 .filter-cost-box {
   display: flex;
@@ -586,41 +580,78 @@ a {
 .filter-radio {
   min-height: 25px;
 }
-.filter-checkbox {
-  min-height: 23px;
-  margin-bottom: 16px;
-}
 .filter-radio-img::before {
   content: "";
   position: absolute;
   width: 25px;
   height: 25px;
-  border-radius: 50%;
   top: 0;
   left: 0;
-  background-color: #ffffff;
-  border: 4px solid #4d4d4d;
+  background-image: url(../img/radio-off.svg);
   opacity: 0.4;
+}
+/*Поведение чекбокса при наведении мыши*/
+.filter-radio-img:focus::before,
+.filter-radio-img:hover::before {
+  opacity: 1;
+}
+/*Отслеживание состояния checked у радиокнопок*/
+.filter-input-radio:checked+span::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 0;
+  left: 0;
+  background-image: url(../img/radio-on.svg);
+  opacity: 0.4;
+}
+
+.filter-input-radio:checked+span:focus::after,
+.filter-input-radio:checked+span:hover::after {
+  background-image: url(../img/radio-on.svg);
+  opacity: 1;
+}
+/*Начало фильтра с особноостями*/
+.filter-checkbox {
+  min-height: 23px;
+  margin-bottom: 16px;
 }
 .filter-checkbox-img::before {
   content: "";
   position: absolute;
   width: 23px;
   height: 23px;
-  border-radius: 2px;
   top: 0;
   left: 0;
-  background-color: #fff;
-  border: 2px solid #b8b8b8;
+  background-image: url(../img/checkbox-off.svg);
+  opacity: 0.4;
 }
-.filter-type { /*Убирает границу у формы*/
-  border: none;
-  padding: 0;
+.filter-input-checkbox:checked+span::after {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  top: 0;
+  left: 0;
+  background-image: url(../img/checkbox-on.svg);
+  opacity: 0.4;
+}
+.filter-input-checkbox:checked+span:focus::after,
+.filter-input-checkbox:checked+span:hover::after {
+  background-image: url(../img/checkbox-on.svg);
+  opacity: 1;
 }
 .filter-option:hover,
 .filter-option:focus {
   color: #000000;
 }
+
+.filter-radio-img,
+.filter-checkbox-img {
+  cursor: pointer;
+}
+
 .filter-button {
   padding: 16px 89px;
 }
@@ -703,6 +734,7 @@ a {
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 0;
+/*  align-content: space-between;*/
   list-style: none;
 }
 .templates-item {
@@ -711,32 +743,26 @@ a {
   position: relative;
   margin-bottom: 33px;
 }
-.templates-item:focus,
-.templates-item :hover {
-  border-top: 40px solid #4d4d4d;
-}
 .templates-item::before {
   content: "";
   position: absolute;
-  top: -27px;
-  left: 16px;
-  width: 60px;
-  height: 14px;
+  top: -39px;
+  left: 0;
+  width: 360px;
+  height: 40px;
   background-image: url(../img/browser.svg);
+  background-repeat: no-repeat;
+  opacity: 0.12
 }
 .templates-inner {
   line-height: 0;
   overflow: hidden;
 }
-
-.templates-item:focus,
-.templates-item:hover {
-  border-top: 40px solid #4d4d4d;
-}
-.templates-item:hover .templates-hover,
-.templates-item:focus .templates-hover {
-  min-height: 231px;
-  display: block;
+.templates-item:focus::before,
+.templates-item:hover::before {
+  background-image: url(../img/browser.svg);
+  background-repeat: no-repeat;
+  opacity: 1;
 }
 .templates-hover {
   background-color: #eeeeee;
@@ -765,6 +791,11 @@ a {
   color: #666666;
   margin-bottom: 29px;
 }
+.templates-item:hover .templates-hover,
+.templates-item:focus .templates-hover {
+  min-height: 231px;
+  display: block;
+}
 .br {
   display: block;
 }
@@ -772,7 +803,6 @@ a {
   padding: 16px 60px;
   margin: 0;
 }
-
 
 /*  #PAGINATION -----------------------*/
 .page-buttons-previous,
@@ -817,7 +847,6 @@ a {
   display: flex;
   padding-left: 20px;
   margin-bottom: 70px;
-/*  align-items: flex-start;*/
 }
 .social-list {
   display: flex;
@@ -827,7 +856,6 @@ a {
   list-style: none;
   padding: 0;
   margin: 0;
-
 }
 .social-button a {
   position: relative;
