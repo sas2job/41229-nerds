@@ -28,41 +28,40 @@
 
     <main>
        <h1 class="visually-hidden">Главная страница дизайн-студии Nerds</h1>
-       <section class="slider">
-         <div class="slider-current container">
-         <input type="radio" id="btn-1" name="toggle" checked>
-         <input type="radio" id="btn-2" name="toggle">
-         <input type="radio" id="btn-3" name="toggle">
-           <div class="slider-controls">
-         	  <label for="btn-1"><span class="visually-hidden">Слайд-1</span></label>
-         	  <label for="btn-2"><span class="visually-hidden">Слайд-2</span></label>
-              <label for="btn-3"><span class="visually-hidden">Слайд-3</span></label>
-         </div>
-         <div class="slider-picture slide-1"><img src="img/slide1.png" width="698" height="413" alt="слайд-1"></div>
-         <div class="slider-picture slide-2"><img src="img/slide2.png" width="663" height="430" alt="слайд-2"></div>
-         <div class="slider-picture slide-3"><img src="img/slide3.png" width="749" height="411" alt="слайд-3"></div>
-         <div class="slider-container">
-           <div class="slider-inner">
-            <b class="slider-b">Долго, дорого,<br> скрупулёзно.</b>
-            <p class="slider-p">Математически выверенный дизайн<br>
-            для вашего сайта или мобильного приложения.</p>
-            <a class="slider-button button" href="#">Узнать больше</a>
-           </div>
-           <div class="slider-inner">
-              <b class="slider-b">Любим математику<br> как никто другой</b>
-              <p class="slider-p">Никакого креатива, только математические формулы<br>
-              для расчета идеальных пропорций.</p>
-              <a class="slider-button button" href="#">Узнать больше</a>
-            </div>
-            <div class="slider-inner">
-              <b class="slider-b">Только ночь,<br> только хардкор</b>
-              <p class="slider-p">Работать днём, как все? Мы против этого.<br>
-              Ближе к полуночи работа только начинается.</p>
-              <a class="slider-button button" href="#">Узнать больше</a>
-            </div>
-          </div>
-         </div>
-       </section>
+    <div class="slider-wrapper">
+
+      <section class="slider container">
+        <h2 class="visually-hidden">Немного о нас</h2>
+        <input class="visually-hidden slide-1" type="radio" name="toggle" id="slide-1" checked>
+        <input class="visually-hidden slide-2" type="radio" name="toggle" id="slide-2">
+        <input class="visually-hidden slide-3" type="radio" name="toggle" id="slide-3">
+        <div class="slider-control">
+          <label for="slide-1">
+            <span class="visually-hidden">Слайд №1</span>
+          </label>
+          <label for="slide-2">
+            <span class="visually-hidden">Слайд №2</span>
+          </label>
+          <label for="slide-3">
+            <span class="visually-hidden">Слайд №3</span>
+          </label>
+        </div>
+        <div class="slider-item slider-item-1">
+          <b>Долго, дорого, скурпулезно</b>
+          <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
+          <a class="button slider-button" href="#">Узнать больше</a>
+        </div>
+        <div class="slider-item slider-item-2">
+          <b>Любим математику как никто другой</b>
+          <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+          <a class="button slider-button" href="#">Узнать больше</a>
+        </div>
+        <div class="slider-item slider-item-3">
+          <b>Только ночь, только хардкор</b>
+          <p>Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
+          <a class="button slider-button" href="#">Узнать больше</a>
+        </div>
+      </section>
 
        <section class="advantages">
        	<h2 class="visually-hidden">Услуги</h2>
