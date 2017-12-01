@@ -531,7 +531,7 @@ outline: none;
 .contacts {
   min-width: 100%;
   min-height: 416px;
-  background-image: url(../img/map.png);
+  background-image: url(../img/map-1.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -540,6 +540,7 @@ outline: none;
 .contacts .container {
   position: relative;
   min-height: 416px;
+  margin-bottom: 69px;  
 }
 
 .contacts-text {
@@ -587,7 +588,10 @@ outline: none;
 /*  #TITLE-INNER-------------------*/
 
 .title-container {
-  padding: 77px 0 105px;
+  padding-top: 77px;
+  padding-right: 0px;
+  padding-bottom: 105px;
+  padding-left: 0px;
   color: #000000;
   background-color: #eeeeee;
   margin-bottom: 45px;
@@ -598,6 +602,7 @@ outline: none;
   font-size: 55px;
   line-height: 55px;
   text-align: center;
+  padding-right: 22px;
 }
 
 /*Начало основного блока на странице*/
@@ -608,6 +613,8 @@ outline: none;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+padding-left: 10px;
+padding-right: 30px;    
 }
 
 /*  #FILTERS --------------------------*/
@@ -619,7 +626,7 @@ outline: none;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 10px;
+  padding-top: 13px;
   -webkit-box-align: left;
       -ms-flex-align: left;
           align-items: left;
@@ -649,9 +656,11 @@ outline: none;
 }
 
 .filter-type:nth-child(3)  {
-  margin-bottom: 14px;
+  margin-bottom: 26px;
 }
-
+.filter-type:nth-child(4) {
+    margin-bottom: 30px;
+}
   .choiсe-title {
   font-size: 18px;
   line-height: 30px;
@@ -786,33 +795,36 @@ outline: none;
 }
 
 .filter-checkbox-img::before {
-  content: "";
+  content: url(../img/checkbox-off.svg);
   position: absolute;
   width: 23px;
   height: 23px;
   top: 0;
   left: 0;
-  background-image: url(../img/checkbox-off.svg);
   opacity: 0.4;
 }
 
 .filter-input-checkbox:checked+span::after {
-  content: "";
+  content: url(../img/checkbox-on.svg);
   position: absolute;
   width: 23px;
   height: 23px;
   top: 0;
   left: 0;
-  background-image: url(../img/checkbox-on.svg);
   opacity: 0.4;
 }
 
 .filter-input-checkbox:checked+span:focus::after,
 .filter-input-checkbox:checked+span:hover::after {
-  background-image: url(../img/checkbox-on.svg);
+  content: url(../img/checkbox-on.svg);
   opacity: 1;
 }
 
+.filter-input-checkbox+span:focus::before,
+.filter-input-checkbox+span:hover::before {
+  content: url(../img/checkbox-off.svg);
+  opacity: 1;
+}
 .filter-option:hover,
 .filter-option:focus {
   color: #000000;
@@ -839,7 +851,7 @@ outline: none;
 
 /*  #SORTING ------------------------*/
 .flex-element {
-  width: 760px;
+  width: 780px;
 }
 
 .sorting {
@@ -853,8 +865,9 @@ outline: none;
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 760px;
-  margin-bottom: 51px;
-  margin-top: 7px;
+  margin-bottom: 38px;
+  margin-top: 8px;
+  padding-left: 20px;
 }
 
 .sorting-list {
@@ -866,7 +879,7 @@ outline: none;
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 360px;
+  width: 380px;
 }
 
 .sorting-text {
@@ -877,7 +890,7 @@ outline: none;
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 272px;
-  padding: 0;
+  padding-left: 20px;
   margin: 0;
   list-style: none;
 }
@@ -893,7 +906,9 @@ outline: none;
 .sorting-option:hover {
   color: rgba(0,0,0,.6);
 }
-
+.sorting-current {
+   color: rgba(0,0,0,.6); 
+}
 .sorting-arrow {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -954,7 +969,7 @@ outline: none;
 }
 /*  #TEMPLATES ------------------------*/
 .templates {
-  margin-bottom: 28px;
+  margin-bottom: 42px;
 }
 
 .templates-list {
@@ -966,9 +981,10 @@ outline: none;
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 0;
+  padding-left: 20px;
 /*  align-content: space-between;*/
   list-style: none;
+    background-color: aquamarine;
 }
 
 .templates-item {
