@@ -16,10 +16,12 @@
 *,
 ::before,
 ::after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 html {
-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+        box-sizing: border-box;
 }
 html,
 body {
@@ -69,8 +71,10 @@ img {
 
 /*  #NAVIGATION-SITE  ----------------*/
 .page-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  padding-left: 20px;
+  padding-left: 10px;
   padding-right: 20px;
   /*Отступы по краям для того,
   чтобы текст на маленкльком разрешении
@@ -85,8 +89,12 @@ a {
   color: #000000;
 }
 .site-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 75px;
   margin-left: 0;
   margin-right: 0;
@@ -111,15 +119,20 @@ a {
   border-bottom: 2px solid #fb565a;
 }
 .site-navigation:first-of-type {
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 440px;
   margin-left: 200px;
   }
 .site-navigation:last-of-type {
   /* Корзина */
   position: relative;
-  justify-content: flex-end;
-  padding-left: 25px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-left: 0px;
+    padding-right: 10px;
   margin-left: auto;
 }
 .site-navigation:last-of-type li::before {
@@ -145,14 +158,15 @@ a {
 /*  #SLIDER---------------------------*/
 /*  #SLIDER  -------------------------*/
 
-.slider-wrapper {
-  background-color: #eeeeee;
-}
 
 .slider {
   position: relative;
+  background-color: #eeeeee;
 }
 
+.slider-wrapper {
+  padding: 0 10px;  
+}
 .slider b {
   display: block;
   margin-bottom: 27px;
@@ -204,9 +218,13 @@ a {
   position: absolute;
   right: 0;
   bottom: 96px;
-  left: 0;
+  left: -15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0 35%;
 }
 
@@ -256,22 +274,30 @@ a {
 
 .button:active {
   background-color: #d7373b;
-  box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
+  -webkit-box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
+          box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
   color: rgba(255, 255, 255, 0.3)
 }
 
 /*  #ADVANTAGES-----------------------*/
 .advantages {
   margin-bottom: 40px;
+    margin-top: 80px;
+    background-color: #ffffff;
 }
 
 .advantages-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  padding-left: 20px;
-  padding-right: 20px;  /*Отступы от края страницы*/
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 30px;  /*Отступы от края страницы*/
   margin-bottom: 40px;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   border-bottom: 2px solid #eeeeee;
   list-style: none;
 }
@@ -332,11 +358,16 @@ a {
 
 /*  #STUDIO-----------------------*/
 .studio-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding-right: 20px;
-  padding-left: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 30px;
+  padding-left: 10px;
   border-bottom: 2px solid #eeeeee;
 }
 
@@ -370,9 +401,16 @@ a {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   min-height: 120px;
 }
 
@@ -406,6 +444,8 @@ a {
 }
 
 .studio-list-percent {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 350px;
   padding: 0;
@@ -434,39 +474,49 @@ a {
 
 /*  #PARTNERS --------------------------*/
 
-.partners-list {
+.partners {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  list-style: none;
+  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-height: 182px;
   margin-bottom: 80px;
-  padding-top: 49px;
-  padding-right: 0;
-  padding-bottom: 37px;
-  padding-left: 0;
   border-bottom: 2px solid #eeeeee;
 }
-
-.partners-list a {
+.partners::before {
+    content: "";
+    position: absolute;
+    top: 65px;
+    left: 279px;
+    width: 2px;
+    height: 52px;
+    background-color: #eeeeee;
+    -webkit-box-shadow: 300px 0 0 #eeeeee, 600px 0 0 #eeeeee;
+            box-shadow: 300px 0 0 #eeeeee, 600px 0 0 #eeeeee;
+}
+.partners a {
   opacity: 0.2; /*Непрозрачность 20%*/
 }
 
-.partners-list a:hover,
-.partners-list a:focus {
+.partners a:hover,
+.partners a:focus {
   opacity: 1; /*Непрозрачность 100%*/
+outline: none;
 }
 
-.partners-list a:active {
+.partners a:active {
   opacity: 0.1; /*Непрозрачность 10%*/
 }
-
-.partners-list li::after {
-  content: "";
-  position: absolute;
-  width: 2px;
-  height: 52px;
-  top: 64px;
-  left: 0;
-  background-color: #eeeeee;
+.partners img {
+  display: block;
 }
 
 /*  #CONTACTS------------------------*/
@@ -475,13 +525,18 @@ a {
   position: relative;
   margin-bottom: 65px;
 }
-
+.contacts-map img{
+    height: 415px;
+    width: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
 .contacts-container-text {
   position: absolute;
   width: 319px;
   height: 308px;
   top: 52px;
-  left: 132px;
+  left: 50px;
   padding-top: 49px;
   padding-right: 0;
   padding-bottom: 0;
@@ -536,16 +591,27 @@ a {
 
 /*Начало основного блока на странице*/
 .flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 /*  #FILTERS --------------------------*/
 .filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-top: 10px;
-  align-items: left;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
   width: 260px;
 }
 
@@ -635,8 +701,12 @@ a {
 }
 
 .filter-cost-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 260px;
   margin-bottom: 54px;
 }
@@ -762,24 +832,39 @@ a {
 }
 
 .sorting {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 760px;
   margin-bottom: 51px;
   margin-top: 7px;
 }
 
 .sorting-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 360px;
 }
 
 .sorting-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 272px;
   padding: 0;
   margin: 0;
@@ -799,9 +884,14 @@ a {
 }
 
 .sorting-arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style: none;
   width: 41px;
   margin: 0;
@@ -831,19 +921,23 @@ a {
 }
 
 .sorting-up:active::before {
+/*
   content: "";
   display: inline-block;
   width: 11px;
   height: 10px;
+  */
   background-image: url(../img/icon-up-dir.svg);
   opacity: 1;
 }
 
 .sorting-up:hover::before {
+  /*
   content: "";
   display: inline-block;
   width: 11px;
   height: 10px;
+  */
   background-image: url(../img/icon-up-dir.svg);
   opacity: 0.8;
 }
@@ -853,9 +947,14 @@ a {
 }
 
 .templates-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 0;
 /*  align-content: space-between;*/
   list-style: none;
@@ -956,10 +1055,13 @@ a {
 .page-buttons-number-current:focus,
 .page-buttons-number-current:active {
   background-color: #ffffff;
-  box-shadow: inset 0 0 0 3px #dbdbdb;
+  -webkit-box-shadow: inset 0 0 0 3px #dbdbdb;
+          box-shadow: inset 0 0 0 3px #dbdbdb;
   color: #000;
 }
 .page-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 740px;
   height: 50px;
@@ -977,14 +1079,21 @@ a {
 /*  #SOCIAL --------------------------*/
 
 .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  padding-left: 20px;
+  padding-left: 10px;
   margin-bottom: 70px;
 }
 .social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 260px;
   list-style: none;
   padding: 0;
@@ -1005,13 +1114,15 @@ a {
 }
 .social-button a:active {
   background-color: #d7373b;
-  box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
+  -webkit-box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
+          box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 .social-button svg {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
 }
 .social-button a:active svg {
   opacity: 0.3;
