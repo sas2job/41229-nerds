@@ -54,8 +54,8 @@ img {
   overflow: hidden;
   }
   .container {
-  width: 1200px;
-  margin: 0 auto;
+  width: 1200px; /*Ширина блока*/
+  margin: 0 auto; /*Центрирование*/
   }
 
 /*------------------------------------*\
@@ -321,13 +321,16 @@ a {
 
 .advantage-text {
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 31px;
   width: 250px;
 }
 
 .advantage-button {
-  padding: 16px 40px;
-  margin-bottom: 80px;
+    padding-top: 16px;
+    padding-right: 40px;
+    padding-bottom: 16px;
+    padding-left: 40px;
+    margin-bottom: 80px;
 }
 
 .green-button {
@@ -488,14 +491,18 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   min-height: 182px;
-  margin-bottom: 80px;
+  padding-top: 0px;
+  padding-right: 28px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  margin-bottom: 83px;
   border-bottom: 2px solid #eeeeee;
 }
 .partners::before {
     content: "";
     position: absolute;
     top: 65px;
-    left: 279px;
+    left: 289px;
     width: 2px;
     height: 52px;
     background-color: #eeeeee;
@@ -521,48 +528,52 @@ outline: none;
 
 /*  #CONTACTS------------------------*/
 
-.contacts-map {
+.contacts {
+  min-width: 100%;
+  min-height: 416px;
+  background-image: url(../img/map.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.contacts .container {
   position: relative;
-  margin-bottom: 65px;
+  min-height: 416px;
 }
-.contacts-map img{
-    height: 415px;
-    width: auto;
-    -o-object-fit: cover;
-       object-fit: cover;
-}
-.contacts-container-text {
+
+.contacts-text {
   position: absolute;
-  width: 319px;
-  height: 308px;
-  top: 52px;
-  left: 50px;
-  padding-top: 49px;
-  padding-right: 0;
-  padding-bottom: 0;
-  padding-left: 50px;
+  top: 54px;
+  left: 10px;
+  width: 318px;
+  margin: 0;
+  padding: 50px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
   background-color: #ffffff;
 }
 
 .contacts-text b {
+  display: block;
+  margin-bottom: 23px;
   font-size: 18px;
   line-height: 30px;
-  font-weight: 700;
-  text-transform: uppercase;
   color: #000000;
-  display: block;
-  margin-bottom: 24px;
-}
-
-.contacts-text p {
-  line-height: 18px;
-  color: #666666;
-  width: 210px;
+  text-transform: uppercase;
 }
 
 .contacts-button {
-  padding: 16px 45px;
+  padding-top: 16px;
+  padding-right: 42px;
+  padding-bottom: 16px;
+  padding-left: 45px;
   margin-top: 22px;
+}
+
+.contacts img {
+  display: none;
 }
 /*------------------------------------*\
     #INNER-CONTENT
