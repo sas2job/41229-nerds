@@ -165,7 +165,7 @@ a {
 }
 
 .slider-wrapper {
-  padding: 0 10px;  
+  padding: 0 10px;
 }
 .slider b {
   display: block;
@@ -540,7 +540,7 @@ outline: none;
 .contacts .container {
   position: relative;
   min-height: 416px;
-  margin-bottom: 69px;  
+  margin-bottom: 69px;
 }
 
 .contacts-text {
@@ -614,7 +614,7 @@ outline: none;
       -ms-flex-pack: justify;
           justify-content: space-between;
 padding-left: 10px;
-padding-right: 30px;    
+padding-right: 30px;
 }
 
 /*  #FILTERS --------------------------*/
@@ -909,7 +909,7 @@ padding-right: 30px;
   color: rgba(0,0,0,.6);
 }
 .sorting-current {
-   color: rgba(0,0,0,.6); 
+   color: rgba(0,0,0,.6);
 }
 .sorting-arrow {
   display: -webkit-box;
@@ -1082,7 +1082,7 @@ padding-right: 30px;
   display: none;
 }
 .page-buttons-number {
-  background-color: #eeeeee;   
+  background-color: #eeeeee;
   padding: 16px 20px;
 }
 .page-buttons {
@@ -1106,7 +1106,7 @@ padding-right: 30px;
 }
 .page-buttons-next {
   text-transform: uppercase;
-  background-color: #eeeeee;    
+  background-color: #eeeeee;
 }
 /*------------------------------------*\
     #FOOTER
@@ -1184,6 +1184,123 @@ padding-right: 30px;
 /*------------------------------------*\
     #MODAL-FEEDBACK
 \*------------------------------------*/
+
+
+/*1 вариант начало*/
+.modal {
+  display: none;
+}
+.modal-message-back {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,.3);
+  animation-name: modal-back;
+  animation-duration: .4s;
+}
+.modal-message {
+  position: relative;
+  width: 960px;
+  padding-top: 43px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+  padding-left: 24px;
+  color: #323232;
+  background-color: #ffffff;
+  border-radius: 10px;
+  animation-name: modal;
+}
+.modal-message form,
+.modal-show {
+  display: flex;
+}
+.modal-message h2 {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 28px;
+  padding-left: 74px;
+}
+.modal-message form {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 100%;
+}
+.modal-fieldset {
+  padding-left: 22px;
+  border: none;
+}
+
+.input, /*Стили для placeholder*/
+.modal textarea {
+  min-height: 44px;
+  padding: 10px 14px;
+  font-weight: 700;
+  background-color: #fff;
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+}
+.modal-label {
+  display: block;
+}
+/*Поле ввода на модальной форме*/
+.modal-message input {
+  width: 360px;
+  margin-bottom: 20px;
+}
+.modal-message textarea {
+  width: 100%;
+  min-height: 155px;
+  width: 760px;
+  margin-bottom: 25px;
+}
+/*Кнопка Отправить */
+.modal-button {
+  padding-top: 16px;
+  padding-right: 42px;
+  padding-bottom: 16px;
+  padding-left: 45px;
+  margin-top: 22px;
+}
+.modal-message .button {
+  align-self: flex-end;
+  letter-spacing: -.3px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 81px;
+  right: 83px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.modal-close::before {
+  content: "";
+  display: inline-block;
+  width: 21px;
+  height:21px;
+  background-image: url(../img/close-cross.svg);
+  opacity: 1;
+}
+
+
+
+/*конец 1 варианта*/
+
+/*2 вариант начало */
+/*
 .modal-feedback b {
   font-size: 45px;
   line-height: 45px;
@@ -1231,6 +1348,8 @@ padding-right: 30px;
   padding: 16px 45px;
   margin-top: 22px;
 }
+*/
+/*2 вариант конец*/
 
 /* Второе из дух вспомогательных css-правил.
    Будет удалено из итогового проекта. */

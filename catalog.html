@@ -213,23 +213,16 @@
                         </div>
                       </li>
                     </ul>
-                  </div>
-                <ul class="page-buttons">
-                    <li><a class="page-buttons-previous button gray-button" href="#">Предыдущая</a>
-                    </li>
-                    <li><a class="page-buttons-number button gray-button page-buttons-number-current">1</a>
-                    </li>
-                    <li><a class="page-buttons-number button gray-button" href="#">2</a>
-                    </li>
-                    <li><a class="page-buttons-number button gray-button" href="#">3</a>
-                    </li>
-                    <li><a class="page-buttons-next button gray-button" href="#">Следующая</a>
-                    </li>
-                </ul>
-                </div>
-            </div>
+          </div>
+          <ul class="page-buttons">
+            <li><a class="page-buttons-previous button gray-button" href="#">Предыдущая</a></li>
+            <li><a class="page-buttons-number button gray-button page-buttons-number-current">99</a></li>
+            <li><a class="page-buttons-number button gray-button" href="#">2</a></li>
+            <li><a class="page-buttons-number button gray-button" href="#">3</a></li>
+            <li><a class="page-buttons-next button gray-button" href="#">Следующая</a></li>
+          </ul>
+          </div>
         </div>
-
     </main>
     <footer class="page-footer">
 
@@ -266,27 +259,56 @@
 
     </footer>
 
-<!--    <section class="modal-feedback">
-        <h2 class="visually-hidden">Форма обратной связи</h2>
-        <b>Напишите нам</b>
-        <form class="modal-feedback-form" method="post" action="https://echo.htmlacademy.ru">
-            <div>
-                <label for="name">Ваше имя:</label>
-                <input type="text" name="name" id="name" class="modal-feedback-input" placeholder="Представьтесь, пожалуйста">
-            </div>
-            <div>
-                <label for="email">Ваш e-mail:</label>
-                <input type="email" name="email" id="email" class="modal-feedback-input" placeholder="Для отправки ответа">
-            </div>
-            <p>
-                <label for="text">Текст письма:</label>
-                <textarea class="modal-feedback-input modal-feedback-text" name="text" id="text" placeholder="В свободной форме"></textarea>
-            </p>
-            <button class="modal-feedback-button button" type="submit">Отправить</button>
-        </form>
-        <button class="modal-feedback-close"><span class="visually-hidden">Закрыть</span></button>
-    </section> -->
+    <div class="modal modal-message-back modal-show">
 
+        <section class="modal-message">
+
+          <h2>Напишите нам</h2>
+
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="modal-fieldset">
+            <label class="modal-label" for=message-name">Ваше имя:</label>
+            <input class="input" type="text" name="name" id="message-name" placeholder="Представьтесь, пожалуйста">
+          </fieldset>
+          <fieldset class="modal-fieldset">
+            <label class="modal-label" for="message-email">Ваш e-mail: </label>
+            <input class="input" type="email" name="email" value="" id="message-email" placeholder="Ваша почта для ответа?">
+          </fieldset>
+          <fieldset class="modal-fieldset">
+            <label class="modal-label" for="message-text">Текст письма:</label>
+            <textarea id="message-text" placeholder="В свободной форме"></textarea>
+          </fieldset>
+            <button class="button modal-button" type="submit">Отправить</button>
+          </form>
+
+          <button class="modal-close" type="button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+
+        </section>
+
+      </div>
+<!--
+   <section class="modal-feedback modal modal-open">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <b>Напишите нам</b>
+      <form class="modal-feedback-form" method="post" action="https://echo.htmlacademy.ru">
+        <label for="name">Ваше имя:</label>
+        <input type="text" name="name" id="name" class="modal-feedback-input" placeholder="Представьтесь, пожалуйста">
+        <label for="email">Ваш e-mail:</label>
+        <input type="email" name="email" id="email" class="modal-feedback-input" placeholder="Для отправки ответа">
+        <label for="text">Текст письма:</label>
+        <textarea class="modal-feedback-input modal-feedback-text" name="text" id="text" placeholder="В свободной форме"></textarea>
+        <button class="modal-feedback-button button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-feedback-close">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+    </section>
+-->
+<script src="js/scripts.js"></script>
   </body>
 
 </html>
+
+
