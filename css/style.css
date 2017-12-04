@@ -1201,20 +1201,17 @@ padding-right: 30px;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0,0,0,.3);
-  animation-name: modal-back;
-  animation-duration: .4s;
 }
 .modal-message {
   position: relative;
   width: 960px;
-  padding-top: 43px;
-  padding-right: 24px;
-  padding-bottom: 24px;
-  padding-left: 24px;
+  padding-top: 16px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 25px;
   color: #323232;
   background-color: #ffffff;
   border-radius: 10px;
-  animation-name: modal;
 }
 .modal-message form,
 .modal-show {
