@@ -1198,20 +1198,26 @@ padding-right: 30px;
   top: 0;
   left: 0;
   z-index: 100;
+
   width: 100vw;
   height: 100vh;
+
   background-color: rgba(0,0,0,.3);
 }
 .modal-message {
   position: relative;
   width: 960px;
-  padding-top: 16px;
+  height: 590px;
+  padding-top: 38px;
   padding-right: 0px;
-  padding-bottom: 0px;
+  padding-bottom: 70px;
   padding-left: 25px;
   color: #323232;
   background-color: #ffffff;
+  /*
   border-radius: 10px;
+  */
+  box-shadow: 0px 20px 40px 0px rgba(0, 1, 1, 0.75);
 }
 .modal-message form,
 .modal-show {
@@ -1223,13 +1229,14 @@ padding-right: 30px;
   font-weight: 500;
   font-size: 45px;
   line-height: 28px;
-  padding-left: 74px;
+  padding-left: 73px;
 }
 .modal-message form {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: flex-start;
-  padding-left: 50px;
+  padding-top: 28px;
+  padding-left: 75px;
   padding-right: 50px;
   width: 100%;
 }
@@ -1241,7 +1248,10 @@ padding-right: 30px;
 .input, /*Стили для placeholder*/
 .modal textarea {
   min-height: 44px;
-  padding: 10px 14px;
+  padding-top: 10px;
+  padding-right: 14px;
+  padding-bottom: 10px;
+  padding-left: 14px;
   font-weight: 700;
   background-color: #fff;
   border: 1px solid #d3d3d2;
@@ -1250,6 +1260,7 @@ padding-right: 30px;
 .modal-label {
   display: block;
   width: 50%;
+  margin-bottom: 22px;
 }
 /*Поля ввода на модальной форме*/
 .modal-message input {
@@ -1257,23 +1268,24 @@ padding-right: 30px;
   margin-bottom: 20px;
 }
 .modal-message textarea {
-  min-height: 155px;
+  min-height: 115px;
   width: 760px;
   margin-bottom: 25px;
 }
 /*Кнопка Отправить */
 .modal-button {
   padding-top: 16px;
-  padding-right: 42px;
+  padding-right: 87px;
   padding-bottom: 16px;
-  padding-left: 45px;
-  margin-top: 22px;
+  padding-left: 81px;
 }
+/*
+
 .modal-message .button {
   align-self: flex-end;
   letter-spacing: -.3px;
 }
-
+*/
 .modal-close {
   position: absolute;
   top: 81px;
@@ -1281,8 +1293,16 @@ padding-right: 30px;
   cursor: pointer;
   background: none;
   border: none;
+  opacity: 0.3;
 }
-
+.modal-close:hover {
+  opacity: 1;
+  background-color: transparent;
+}
+.modal-close:active {
+  background-color: transparent;
+  opacity: 0.1;
+}
 .modal-close::before {
   content: "";
   display: inline-block;
