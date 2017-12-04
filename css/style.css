@@ -1240,10 +1240,6 @@ padding-right: 30px;
   padding-right: 50px;
   width: 100%;
 }
-.modal-fieldset {
-  padding-left: 22px;
-  border: none;
-}
 
 .input, /*Стили для placeholder*/
 .modal textarea {
@@ -1264,6 +1260,7 @@ padding-right: 30px;
 }
 .modal-label-message {
   width: 100%;
+  margin-bottom: 50px;
 }
 /*Поля ввода на модальной форме*/
 .modal-message input {
@@ -1273,7 +1270,6 @@ padding-right: 30px;
 .modal-message textarea {
   min-height: 115px;
   width: 760px;
-  margin-bottom: 25px;
 }
 /*Кнопка Отправить */
 .modal-button {
