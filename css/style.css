@@ -1191,13 +1191,13 @@ padding-right: 30px;
   display: none;
 }
 .modal-message-back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0,0,0,.3);
@@ -1249,14 +1249,14 @@ padding-right: 30px;
 }
 .modal-label {
   display: block;
+  width: 50%;
 }
-/*Поле ввода на модальной форме*/
+/*Поля ввода на модальной форме*/
 .modal-message input {
   width: 360px;
   margin-bottom: 20px;
 }
 .modal-message textarea {
-  width: 100%;
   min-height: 155px;
   width: 760px;
   margin-bottom: 25px;
