@@ -1257,10 +1257,13 @@ padding-right: 30px;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
 }
-.modal-label {
+.modal-label-contacts {
   display: block;
   width: 50%;
   margin-bottom: 22px;
+}
+.modal-label-message {
+  width: 100%;
 }
 /*Поля ввода на модальной форме*/
 .modal-message input {
