@@ -1208,10 +1208,10 @@ padding-right: 30px;
   position: relative;
   width: 960px;
   height: 590px;
-  padding-top: 38px;
+  padding-top: 40px;
   padding-right: 0px;
   padding-bottom: 70px;
-  padding-left: 25px;
+  padding-left: 98px;
   color: #323232;
   background-color: #ffffff;
   /*
@@ -1222,22 +1222,23 @@ padding-right: 30px;
 .modal-message form,
 .modal-show {
   display: flex;
+
 }
 .modal-message h2 {
   display: block;
-  margin-bottom: 20px;
   font-weight: 500;
   font-size: 45px;
   line-height: 28px;
-  padding-left: 73px;
+  padding-left: 0px;
+  margin-bottom: 47px;
 }
 .modal-message form {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: flex-start;
-  padding-top: 28px;
-  padding-left: 75px;
-  padding-right: 50px;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
   width: 100%;
 }
 
@@ -1273,10 +1274,15 @@ padding-right: 30px;
 }
 /*Кнопка Отправить */
 .modal-button {
+  width: 260px;
+  height: 50px;
+  text-align: center;
+  /*
   padding-top: 16px;
   padding-right: 87px;
   padding-bottom: 16px;
   padding-left: 81px;
+  */
 }
 /*
 
