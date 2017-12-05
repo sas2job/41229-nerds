@@ -266,13 +266,18 @@
           <h2>Напишите нам</h2>
 
           <form action="https://echo.htmlacademy.ru" method="post">
-
-            <label class="modal-label-contacts" for="message-name">Ваше имя:<input class="input" type="text" name="name" id="message-name" placeholder="Представьтесь, пожалуйста"></label>
-
-            <label class="modal-label-contacts" for="message-email">Ваш e-mail:<input class="input" type="email" name="email" value="" id="message-email" placeholder="Ваша почта для ответа?"></label>
-
-            <label class="modal-label-message" for="message-text">Текст письма:<textarea id="message-text" placeholder="В свободной форме"></textarea></label>
-
+            <fieldset class="modal-fieldset">
+              <label class="modal-label-contacts" for="message-name">Ваше имя:</label>
+              <input class="input" type="text" name="name" id="message-name" placeholder="Представьтесь, пожалуйста">
+            </fieldset>
+            <fieldset class="modal-fieldset">
+              <label class="modal-label-contacts" for="message-email">Ваш e-mail:</label>
+              <input class="input" type="email" name="email" value="" id="message-email" placeholder="Для отправки ответа">
+            </fieldset>
+            <fieldset class="modal-fieldset">
+              <label class="modal-label-message" for="message-text">Текст письма:</label>
+              <textarea id="message-text" placeholder="В свободной форме"></textarea>
+            </fieldset>
             <button class="button modal-button" type="submit">Отправить</button>
           </form>
 
@@ -283,24 +288,6 @@
         </section>
 
       </div>
-<!--
-   <section class="modal-feedback modal modal-open">
-      <h2 class="visually-hidden">Форма обратной связи</h2>
-      <b>Напишите нам</b>
-      <form class="modal-feedback-form" method="post" action="https://echo.htmlacademy.ru">
-        <label for="name">Ваше имя:</label>
-        <input type="text" name="name" id="name" class="modal-feedback-input" placeholder="Представьтесь, пожалуйста">
-        <label for="email">Ваш e-mail:</label>
-        <input type="email" name="email" id="email" class="modal-feedback-input" placeholder="Для отправки ответа">
-        <label for="text">Текст письма:</label>
-        <textarea class="modal-feedback-input modal-feedback-text" name="text" id="text" placeholder="В свободной форме"></textarea>
-        <button class="modal-feedback-button button" type="submit">Отправить</button>
-      </form>
-      <button class="modal-feedback-close">
-        <span class="visually-hidden">Закрыть</span>
-      </button>
-    </section>
--->
 <script src="js/scripts.js"></script>
   </body>
 
