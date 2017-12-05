@@ -1266,7 +1266,7 @@ padding-right: 30px;
 /*Поля ввода на модальной форме*/
 .modal-message input {
   width: 360px;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 .modal-message textarea {
   min-height: 115px;
