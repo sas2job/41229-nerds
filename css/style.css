@@ -1208,10 +1208,10 @@ padding-right: 30px;
   position: relative;
   width: 960px;
   height: 590px;
-  padding-top: 40px;
-  padding-right: 0px;
-  padding-bottom: 70px;
-  padding-left: 98px;
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-bottom: 70px;
+    padding-left: 20px;
   color: #323232;
   background-color: #ffffff;
   /*
