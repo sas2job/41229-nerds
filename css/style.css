@@ -1185,11 +1185,6 @@ padding-right: 30px;
     #MODAL-FEEDBACK
 \*------------------------------------*/
 
-
-/*1 вариант начало*/
-.modal {
-  display: none;
-}
 .modal-message-back {
   display: flex;
   justify-content: center;
@@ -1198,12 +1193,14 @@ padding-right: 30px;
   top: 0;
   left: 0;
   z-index: 100;
-
   width: 100vw;
   height: 100vh;
 /*
   background-color: rgba(0,0,0,.3);
 */
+}
+.modal {
+  display: none;
 }
 .modal-message {
   position: relative;
