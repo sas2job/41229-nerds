@@ -500,7 +500,7 @@ a {
 .contacts .container {
   position: relative;
   z-index: 10;
-  padding-top: 74px;
+  padding-top: 52px;
   padding-bottom: 49px;
 }
 .contacts-text {
@@ -523,10 +523,10 @@ a {
 }
 .contacts-button {
   padding-top: 16px;
-  padding-right: 42px;
-  padding-bottom: 16px;
-  padding-left: 45px;
-  margin-top: 22px;
+  padding-right: 44px;
+  padding-bottom: 17px;
+  padding-left: 43px;
+  margin-top: 23px;
 }
 .contacts-map-yandex {
   position: absolute;
