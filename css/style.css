@@ -867,6 +867,7 @@ padding-right: 30px;
 /*  #SORTING ------------------------*/
 .flex-element {
   width: 780px;
+  margin-bottom: 12px;
 }
 
 .sorting {
@@ -983,7 +984,7 @@ padding-right: 30px;
 }
 /*  #TEMPLATES ------------------------*/
 .templates {
-  margin-bottom: 42px;
+  margin-bottom: 28px;
 }
 
 .templates-list {
