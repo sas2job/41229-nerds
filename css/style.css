@@ -1380,7 +1380,8 @@ padding-right: 30px;
   opacity: 1;
 }
 .modal-message input:invalid {
-  border: 1px solid red;
+  border: 2px solid #e74246;
+  color: #e74246;
 }
 .modal-label-contacts {
   display: block;

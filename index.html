@@ -143,18 +143,19 @@
         </section>
    </main>
 
-   <footer class="page-footer">
+     <footer class="page-footer">
 
     <section class="contacts">
+      <iframe class="contacts-map-yandex" src="https://yandex.ru/map-widget/v1/-/CBa75EBeHB" width="1200" height="430"></iframe>
+      <div class="container">
       <h2 class="visually-hidden">Контакты</h2>
-       <div class="container">
         <div class="contacts-text">
           <b>Nёrds design studio</b>
           <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
           <p>тел. +7 (812) 275-75-75</p>
-          <a class="contacts-button button" href="#">Напишите нам</a>
+          <a class="contacts-button button contacts-feedback" href="#">Напишите нам</a>
         </div>
-        <img src="img/map-1.png" width="1440" height="416" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+        <img class="contacts-map" src="img/map-1.png" width="1440" height="416" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
       </div>
     </section>
 
@@ -178,27 +179,39 @@
 
     </footer>
 
-<!--    <section class="modal-feedback">
-        <h2 class="visually-hidden">Форма обратной связи</h2>
-        <b>Напишите нам</b>
-        <form class="modal-feedback-form" method="post" action="https://echo.htmlacademy.ru">
-            <div>
-                <label for="name">Ваше имя:</label>
-                <input type="text" name="name" id="name" class="modal-feedback-input" placeholder="Представьтесь, пожалуйста">
-            </div>
-            <div>
-                <label for="email">Ваш e-mail:</label>
-                <input type="email" name="email" id="email" class="modal-feedback-input" placeholder="Для отправки ответа">
-            </div>
-            <p>
-                <label for="text">Текст письма:</label>
-                <textarea class="modal-feedback-input modal-feedback-text" name="text" id="text" placeholder="В свободной форме"></textarea>
-            </p>
-            <button class="modal-feedback-button button" type="submit">Отправить</button>
-        </form>
-        <button class="modal-feedback-close"><span class="visually-hidden">Закрыть</span></button>
-    </section> -->
+    <div class="modal modal-message-back">
 
+        <section class="modal-message">
+
+          <h2>Напишите нам</h2>
+
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="modal-fieldset">
+              <label class="modal-label-contacts" for="message-name">Ваше имя:</label>
+              <input class="input" type="text" name="name" id="message-name" placeholder="Представьтесь, пожалуйста">
+            </fieldset>
+            <fieldset class="modal-fieldset">
+              <label class="modal-label-contacts" for="message-email">Ваш e-mail:</label>
+              <input class="input" type="email" name="email" value="" id="message-email" placeholder="Для отправки ответа">
+            </fieldset>
+            <fieldset class="modal-fieldset">
+              <label class="modal-label-message" for="message-text">Текст письма:</label>
+              <textarea id="message-text" placeholder="В свободной форме"></textarea>
+            </fieldset>
+            <button class="button modal-button" type="submit">Отправить</button>
+          </form>
+
+          <button class="button modal-close" type="button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+
+        </section>
+
+      </div>
+    <script src="js/scripts.js"></script>
+    <script>
+
+    </script>
   </body>
 
 </html>
