@@ -558,20 +558,6 @@ outline: none;
   color: #666666;
   background-color: #ffffff;
 }
-/*
-.contacts-text {
-  position: absolute;
-  top: 54px;
-  left: 121px;
-  width: 318px;
-  margin: 0;
-  padding: 50px;
-  font-size: 16px;
-  line-height: 18px;
-  color: #666666;
-  background-color: #ffffff;
-}
-*/
 .contacts-text b {
   display: block;
   margin-bottom: 23px;
@@ -1392,6 +1378,9 @@ padding-right: 30px;
 .modal textarea:focus{
   border: 2px solid #000000;
   opacity: 1;
+}
+.modal-message input:invalid {
+  border: 1px solid red;
 }
 .modal-label-contacts {
   display: block;
