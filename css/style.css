@@ -542,7 +542,23 @@ outline: none;
   min-height: 416px;
   margin-bottom: 69px;
 }
-
+.contacts .container {
+  position: relative;
+  z-index: 10;
+  padding-top: 74px;
+  padding-bottom: 49px;
+}
+.contacts-text {
+  margin-left: 0.9%;
+  margin-right: auto;
+  width: 318px;
+  padding: 50px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+  background-color: #ffffff;
+}
+/*
 .contacts-text {
   position: absolute;
   top: 54px;
@@ -555,7 +571,7 @@ outline: none;
   color: #666666;
   background-color: #ffffff;
 }
-
+*/
 .contacts-text b {
   display: block;
   margin-bottom: 23px;
