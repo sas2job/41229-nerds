@@ -554,7 +554,6 @@ a {
   background-color: #eeeeee;
   margin-bottom: 45px;
 }
-
 .catalog-title {
   font-weight: 500;
   font-size: 55px;
@@ -593,6 +592,7 @@ a {
 .filter-type { /*Убирает границу у формы*/
   border: none;
   padding: 0;
+  cursor: pointer;
 }
 .value-cost {
   width: 80px;
@@ -955,7 +955,9 @@ a {
 .templates-item:focus .templates-hover {
   display: block;
   min-height: 231px;
-  border: 1px solid rgba(77, 77, 77, 0.1);
+  /*
+   border: 1px solid rgba(77, 77, 77, 0.1);
+  */
   -webkit-box-shadow: 0px 6px 15px 0px rgba(0, 1, 1, 0.25);
           box-shadow: 0px 6px 15px 0px rgba(0, 1, 1, 0.25);
 }
@@ -968,7 +970,7 @@ a {
   margin: 0;
 }
 /*  #PAGINATION -----------------------*/
-.page-buttons {
+.pagination {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -976,6 +978,7 @@ a {
   height: 50px;
   padding-left: 20px;
   margin-bottom: 45px;
+  list-style: none;
 }
 .page-buttons-previous,
 .page-buttons-next {
@@ -987,9 +990,6 @@ a {
 .page-buttons-number {
   background-color: #eeeeee;
   padding: 16px 20px;
-}
-.page-buttons {
-  list-style: none;
 }
 .page-buttons-number-current,
 .page-buttons-number-current:active,
