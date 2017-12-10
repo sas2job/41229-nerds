@@ -66,22 +66,16 @@
             </legend>
             <ul class="grid-list">
               <li class="filter-option filter-radio">
-                <label>
-                  <input type="radio" name="grid" value="adaptive" class="visually-hidden filter-input-radio" checked>
-                    <span class="filter-radio-img" tabindex="0">Адаптивная</span>
-                </label>
+                <input type="radio" name="grid" value="adaptive" id="grid-adaptive" class="visually-hidden filter-input-radio" checked>
+                <label for="grid-adaptive" class="filter-radio-img" tabindex="0">Адаптивная</label>
               </li>
               <li class="filter-option filter-radio">
-                <label>
-                  <input type="radio" name="grid" value="fixed" class="visually-hidden filter-input-radio">
-                    <span class="filter-radio-img" tabindex="0">Фиксированная</span>
-                </label>
+                <input type="radio" name="grid" value="fixed" id="grid-fixed" class="visually-hidden filter-input-radio">
+                <label for="grid-fixed" class="filter-radio-img" tabindex="0">Фиксированная</label>
               </li>
               <li class="filter-option filter-radio">
-                <label>
-                  <input type="radio" name="grid" value="rubber" class="visually-hidden filter-input-radio">
-                    <span class="filter-radio-img" tabindex="0">Резиновая</span>
-                </label>
+                <input type="radio" name="grid" value="rubber" id="grid-response" class="visually-hidden filter-input-radio">
+                <label for="grid-response" class="filter-radio-img" tabindex="0">Резиновая</label>
               </li>
             </ul>
               <!-- фильтр тип сетки конец -->
@@ -93,34 +87,24 @@
             </legend>
             <ul class="features-list">
               <li class="filter-option filter-checkbox">
-                <label>
-                  <input type="checkbox" name="slider" class="visually-hidden filter-input filter-input-checkbox" checked>
-                    <span class="filter-checkbox-img" tabindex="0">Слайдер</span>
-                </label>
+                <input type="checkbox" name="slider" id="features-slider" class="visually-hidden filter-input filter-input-checkbox" checked>
+                <label for="features-slider" class="filter-checkbox-img" tabindex="0">Слайдер</label>
               </li>
               <li class="filter-option filter-checkbox">
-                <label>
-                  <input type="checkbox" name="advantages-block" class="visually-hidden filter-input filter-input-checkbox">
-                    <span class="filter-checkbox-img" tabindex="0">Блок преимуществ</span>
-                </label>
+                <input type="checkbox" name="advantages-block" id="features-advantages-block" class="visually-hidden filter-input filter-input-checkbox">
+                <label for="features-advantages-block" class="filter-checkbox-img" tabindex="0">Блок преимуществ</label>
               </li>
               <li class="filter-option filter-checkbox">
-                <label>
-                  <input type="checkbox" name="news" class="visually-hidden filter-input filter-input-checkbox" checked>
-                    <span class="filter-checkbox-img" tabindex="0">Новости</span>
-                </label>
+                <input type="checkbox" name="news" id="features-news" class="visually-hidden filter-input filter-input-checkbox" checked>
+                <label for="features-news" class="filter-checkbox-img" tabindex="0">Новости</label>
               </li>
               <li class="filter-option filter-checkbox">
-                <label>
-                  <input type="checkbox" name="gallery" class="visually-hidden filter-input filter-input-checkbox">
-                    <span class="filter-checkbox-img" tabindex="0">Галерея</span>
-                </label>
+                <input type="checkbox" name="gallery" id="features-gallery" class="visually-hidden filter-input filter-input-checkbox">
+                <label for="features-gallery" class="filter-checkbox-img" tabindex="0">Галерея</label>
               </li>
               <li class="filter-option filter-checkbox">
-                <label>
-                  <input type="checkbox" name="basket" class="visually-hidden filter-input filter-input-checkbox">
-                    <span class="filter-checkbox-img" tabindex="0">Корзина</span>
-                </label>
+                <input type="checkbox" name="basket" id="features-basket" class="visually-hidden filter-input filter-input-checkbox">
+                <label for="features-basket" class="filter-checkbox-img" tabindex="0">Корзина</label>
               </li>
             </ul>
              <!-- фильтр особенности конец -->
@@ -234,9 +218,9 @@
       <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts-text">
           <b>Nёrds design studio</b>
-          <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
+          <p class="contacts-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           <p>тел. +7 (812) 275-75-75</p>
-          <a class="contacts-button button contacts-feedback" href="#">Напишите нам</a>
+          <a class="contacts-button button contacts-feedback" href="write-us.html">Напишите нам</a>
         </div>
         <img class="contacts-map" src="img/map-1.png" width="1440" height="416" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
       </div>

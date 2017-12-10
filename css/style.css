@@ -18,17 +18,12 @@ html {
 -webkit-box-sizing: border-box;
         box-sizing: border-box;
 }
-html,
 body {
-  font-family: 'Roboto', 'Arial', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px; /*Основной размер шрифта*/
   line-height: 24px; /*Основной интерлиньяж*/
-  cursor: default;
   color: #283136;    /*Основной цвет текста*/
-  font-weight: 400; /*Основная жирность шрифта*/
-  background-color: #ffffff; /*Белый цвет фона*/
-  margin: 0;
-  padding: 0;
+  min-width: 1200px;
 }
 img {
   max-width: 100%;
@@ -134,7 +129,7 @@ a {
   left: 0;
   width: 15px;
   height: 15px;
-  background-image: url("../img/cart-icon.svg");
+  background-image: url(../img/cart-icon.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.3;
@@ -209,10 +204,10 @@ a {
           justify-content: center;
   margin: 0 35%;
 }
-
 .slider-control label {
   position: relative;
   display: inline-block;
+  vertical-align: top;
   width: 18px;
   height: 18px;
   margin: 0 9px;
@@ -220,7 +215,6 @@ a {
   border-radius: 50%;
   cursor: pointer;
 }
-
 .slide-1:checked ~ .slider-control label[for="slide-1"]::before,
 .slide-2:checked ~ .slider-control label[for="slide-2"]::before,
 .slide-3:checked ~ .slider-control label[for="slide-3"]::before {
@@ -269,11 +263,10 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-left: 10px;
-  padding-right: 30px;  /*Отступы от края страницы*/
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 0;
   margin-bottom: 40px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -281,6 +274,7 @@ a {
   list-style: none;
 }
 .advantage-item {
+  padding: 0 30px 0 10px;
   margin-right: 60px;
 }
 .advantage-picture {
@@ -399,7 +393,7 @@ a {
 }
 .studio-percent-list-b {
   display: block;
-  margin-left: 16px;
+  margin-left: 19px;
   margin-bottom: 48px;
   text-transform: uppercase;
   font-weight: 700;
@@ -408,12 +402,19 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 350px;
+  max-width: 363px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 0;
   list-style: none;
 }
 .studio-list-percent li {
+  -ms-flex-preferred-size: 100px;
+      flex-basis: 100px;
   margin-right: 21px;
+}
+.studio-list-percent li:nth-child(3n+3) {
+  margin-right: 10px;
 }
 .studio-list-percent b {
   font-weight: 700;
@@ -435,53 +436,57 @@ a {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   min-height: 182px;
-  padding-top: 0px;
-  padding-right: 28px;
-  padding-bottom: 0px;
-  padding-left: 10px;
   margin-bottom: 83px;
   border-bottom: 2px solid #eeeeee;
 }
-.partners::before {
-  content: "";
-  position: absolute;
-  top: 65px;
-  left: 289px;
-  width: 2px;
-  height: 52px;
-  background-color: #eeeeee;
-  -webkit-box-shadow: 300px 0 0 #eeeeee, 600px 0 0 #eeeeee;
-          box-shadow: 300px 0 0 #eeeeee, 600px 0 0 #eeeeee;
+.partner {
+  display: block;
+  width: 260px;
+  height: 180px;
+  margin: 0 30px 0 10px;
+  position: relative;
 }
-.partners a {
+.partner img {
   opacity: 0.2; /*Непрозрачность 20%*/
 }
-.partners a:hover,
-.partners a:focus {
+.partner:hover img,
+.partner:focus img {
   opacity: 1; /*Непрозрачность 100%*/
   outline: none;
 }
-.partners a:active {
+.partner:active img {
   opacity: 0.1; /*Непрозрачность 10%*/
 }
-.partners img {
+.partner::after {
+  content: "";
   display: block;
+  width: 2px;
+  height: 52px;
+  background-color: #eeeeee;
+  position: absolute;
+  top: 64px;
+  right: -20px;
+  opacity: 1;
+}
+.partner:nth-child(4n+1)::after,
+.partner:last-child::after {
+  display: none;
 }
 
 /*  #CONTACTS------------------------*/
-
 .contacts {
   min-width: 100%;
   min-height: 416px;
+  background-color: #ffffff;
   background-image: url(../img/map-1.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -516,6 +521,9 @@ a {
   color: #000000;
   text-transform: uppercase;
 }
+.contacts-address {
+  padding-right: 10px;
+}
 .contacts-button {
   padding-top: 16px;
   padding-right: 44px;
@@ -533,18 +541,16 @@ a {
 .contacts-map {
   display: none;
 }
-
 /*------------------------------------*\
     #INNER-CONTENT
 \*------------------------------------*/
 
 /*  #HEADER - INNER-------------------*/
-
 .background-title {
   background-color: #eeeeee;
 }
-/*  #TITLE-INNER-------------------*/
 
+/*  #TITLE-INNER-------------------*/
 .title-container {
   padding-top: 77px;
   padding-right: 0px;
@@ -613,7 +619,7 @@ a {
   margin-bottom: 26px;
 }
 .filter-type:nth-child(4) {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
   .choiсe-title {
   font-size: 18px;
@@ -659,8 +665,8 @@ a {
   background-color: #00ca74;
 }
 .filled-stroke::after {
-  left: 140px;
   content: "";
+  left: 140px;
   position: absolute;
   top: 50%;
   margin-top: -10px;
@@ -712,7 +718,7 @@ a {
   opacity: 1;
 }
 /*Отслеживание состояния checked у радиокнопок*/
-.filter-input-radio:checked+span::after {
+  .filter-input-radio:checked+label::before {
   content: "";
   position: absolute;
   width: 25px;
@@ -722,8 +728,8 @@ a {
   background-image: url(../img/radio-on.svg);
   opacity: 0.4;
 }
-.filter-input-radio:checked+span:focus::after,
-.filter-input-radio:checked+span:hover::after {
+.filter-input-radio:checked+label:focus::before,
+.filter-input-radio:checked+label:hover::before {
   background-image: url(../img/radio-on.svg);
   opacity: 1;
 }
@@ -733,31 +739,35 @@ a {
   margin-bottom: 16px;
 }
 .filter-checkbox-img::before {
-  content: url(../img/checkbox-off.svg);
+  content: "";
   position: absolute;
   width: 23px;
   height: 23px;
   top: 0;
   left: 0;
+  background-image: url(../img/checkbox-off.svg);
   opacity: 0.4;
 }
-.filter-input-checkbox:checked+span::after {
-  content: url(../img/checkbox-on.svg);
+.filter-input-checkbox:checked+label::before {
+  content: "";
   position: absolute;
   width: 23px;
   height: 23px;
   top: 0;
   left: 0;
+  background-image: url(../img/checkbox-on.svg);
   opacity: 0.4;
 }
-.filter-input-checkbox:checked+span:focus::after,
-.filter-input-checkbox:checked+span:hover::after {
-  content: url(../img/checkbox-on.svg);
+.filter-input-checkbox:checked+label:focus::before,
+.filter-input-checkbox:checked+label:hover::before {
+  content: "";
+  background-image: url(../img/checkbox-on.svg);
   opacity: 1;
 }
-.filter-input-checkbox+span:focus::before,
-.filter-input-checkbox+span:hover::before {
-  content: url(../img/checkbox-off.svg);
+.filter-input-checkbox+label:focus::before,
+.filter-input-checkbox+label:hover::before {
+  content: "";
+  background-image: url(../img/checkbox-off.svg);
   opacity: 1;
 }
 .filter-option:hover,
@@ -783,6 +793,7 @@ a {
   background-color: #d5d5d5;
   color: rgba(0, 0, 0, 0.3);
 }
+
 /*  #SORTING ------------------------*/
 .flex-element {
   width: 780px;
@@ -881,6 +892,7 @@ a {
   background-image: url(../img/icon-up-dir.svg);
   opacity: 0.8;
 }
+
 /*  #TEMPLATES ------------------------*/
 .templates {
   margin-bottom: 28px;
@@ -1037,6 +1049,9 @@ a {
   padding: 0;
   margin: 0;
 }
+.social-button {
+  margin-bottom: 5px;
+}
 .social-button a {
   position: relative;
   display: block;
@@ -1060,7 +1075,8 @@ a {
   top: 50%;
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
+          -ms-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
 }
 .social-button a:active svg {
   opacity: 0.3;
