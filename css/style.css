@@ -486,7 +486,7 @@ a {
 .contacts {
   min-width: 100%;
   min-height: 416px;
-  background-color: #ffffff;
+  background-color: #ece4c6;
   background-image: url(../img/map-1.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -751,7 +751,7 @@ a {
 .filter-input-checkbox:checked+label::before {
   content: "";
   position: absolute;
-  width: 23px;
+  width: 27px;
   height: 23px;
   top: 0;
   left: 0;
