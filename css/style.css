@@ -564,7 +564,6 @@ a {
   font-size: 55px;
   line-height: 55px;
   text-align: center;
-  padding-right: 22px;
 }
 
 /*Начало основного блока на странице*/
@@ -575,8 +574,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-left: 10px;
-  padding-right: 30px;
+  padding: 0 20px;
 }
 
 /*  #FILTERS --------------------------*/
@@ -830,7 +828,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 272px;
+  width: 290px;
   padding-left: 20px;
   margin: 0;
   list-style: none;
